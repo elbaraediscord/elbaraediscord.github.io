@@ -180,9 +180,9 @@ export default function Projects() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             {[
               { label: "Projects Completed", value: "9+" },
-               {/* { label: "Clients Served", value: "X" }, */}
+              { label: "Clients Served", value: "X" }, 
               { label: "Team Members", value: "5+" },
-              {/* { label: "Years Experience", value: "15+" }, */}
+              { label: "Years Experience", value: "X" }, 
             ].map((stat, idx) => (
               <div key={idx}>
                 <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">
