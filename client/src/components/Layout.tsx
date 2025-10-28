@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Link href="/">
             <a className="flex items-center gap-2 font-serif text-2xl font-bold hover:opacity-80 transition-opacity">
               <img 
-                src="/logo-hikmanova-placeholder.svg" 
+                src="/Hikma Nova Final.png" 
                 alt="HikmaNova" 
                 className="w-10 h-10"
               />
