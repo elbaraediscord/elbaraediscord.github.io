@@ -202,11 +202,11 @@ export default function Services() {
               {[
                 {
                   title: "Expert Team",
-                  description: "15+ years of combined experience in AI, data engineering, and cloud architecture",
+                  description: "Years of combined experience in AI, data engineering, and cloud architecture",
                 },
                 {
                   title: "Proven Track Record",
-                  description: "Successfully delivered 50+ projects for Fortune 500 companies and innovative startups",
+                  description: "Successfully delivered projects to multiple companies",
                 },
                 {
                   title: "Cutting-Edge Technology",

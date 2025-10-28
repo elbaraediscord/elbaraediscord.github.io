@@ -18,58 +18,67 @@ const values = [
 
 const team = [
   {
-    name: "Alex Kumar",
-    role: "Founder & Lead AI Architect",
-    bio: "15+ years in machine learning and AI infrastructure",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    name: "Eng. Ibrahim Lasouani",
+    role: "Founder",
+    bio: "Keeps teams aligned, goals clear, and every project delivered flawlessly",
+    avatar: "Anonymous.jpg",
   },
   {
-    name: "Jordan Martinez",
-    role: "Data Engineering Lead",
-    bio: "Expert in scalable data platforms and real-time analytics",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+    name: "Dr. Mohamed Tounsi",
+    role: "Co-Founder",
+    bio: "Dedicated to turning complex challenges into clear, practical outcomes",
+    avatar: "Anonymous.jpg",
   },
   {
-    name: "Casey Chen",
-    role: "Cloud Architect",
-    bio: "Specialized in cloud infrastructure and DevOps",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+    name: "Eng. Boumedienne",
+    role: "Cybersecurity Expert",
+    bio: "Protects digital systems through strategy, vigilance, and advanced security solution",
+    avatar: "Anonymous.jpg",
   },
   {
-    name: "Morgan Lee",
-    role: "Product Manager",
-    bio: "Passionate about user-centric product development",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    name: "Mr. Hicham",
+    role: "Associate",
+    bio: "Strives to bridge innovation, functionality, and real-world human needs.",
+    avatar: "Anonymous.jpg",
+  },
+    {
+    name: "ElBarae Tounsi",
+    role: "Collaborator",
+    bio: "Passionate coder blending creativity and precision to craft seamless digital systems",
+    avatar: "Anonymous.jpg",
   },
 ];
 
+
+{/*
 const timeline = [
   {
-    year: "2020",
+    year: "2025",
     title: "Founded",
     description: "HikmaNova was established with a vision to innovate through technology",
   },
   {
-    year: "2021",
+    year: "2025",
     title: "First Major Project",
     description: "Delivered AI solution for Fortune 500 company, processing 10M+ records daily",
   },
   {
-    year: "2022",
+    year: "2025",
     title: "Team Expansion",
     description: "Grew to 15+ team members across AI, data, and cloud specialties",
   },
   {
-    year: "2023",
+    year: "2025",
     title: "Industry Recognition",
     description: "Recognized as top AI innovation studio in the region",
   },
   {
-    year: "2024",
+    year: "2025",
     title: "Global Reach",
     description: "Expanded operations internationally with clients across 5 continents",
   },
 ];
+*/}
 
 export default function About() {
   return (

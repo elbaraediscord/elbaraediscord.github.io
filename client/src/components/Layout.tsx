@@ -185,10 +185,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </li>
                 <li>
                   <a 
-                    href="mailto:hello@hikmanova.com" 
+                    href="mailto:info@hikmanova.com" 
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    hello@hikmanova.com
+                    info@hikmanova.com
                   </a>
                 </li>
               </ul>
@@ -198,7 +198,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Divider */}
           <div className="border-t border-border pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-              <p>&copy; 2024 HikmaNova. All rights reserved.</p>
+              <p>&copy; 2025 HikmaNova. All rights reserved.</p>
               <div className="flex gap-6">
                 <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
                 <a href="#" className="hover:text-foreground transition-colors">Terms</a>

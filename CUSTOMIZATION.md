@@ -169,7 +169,7 @@ const team = [
 // Update timeline
 const timeline = [
   {
-    year: "2024",
+    year: "2025",
     title: "Milestone",
     description: "Description",
   },
@@ -222,7 +222,7 @@ const allProjects = [
     description: "Description",
     image: "https://image-url.com/image.jpg",
     slug: "project-slug",
-    year: 2024,
+    year: 2025,
   },
   // ... more projects
 ];
@@ -240,7 +240,7 @@ const projectsData: Record<string, any> = {
   "your-project-slug": {
     title: "Your Project Title",
     category: "Category",
-    year: 2024,
+    year: 2025,
     description: "Short description",
     image: "https://image-url.com/image.jpg",
     context: "Project context and background",
@@ -275,7 +275,7 @@ const blogPosts = [
     excerpt: "Short excerpt",
     content: "Full content",
     author: "Author Name",
-    date: "2024-10-20",
+    date: "2025-10-20",
     category: "Category",
     image: "https://image-url.com/image.jpg",
     readTime: "5 min read",
@@ -293,7 +293,7 @@ const blogPostsData: Record<string, any> = {
   "your-post-slug": {
     title: "Post Title",
     author: "Author",
-    date: "2024-10-20",
+    date: "2025-10-20",
     category: "Category",
     readTime: "10 min read",
     image: "https://image-url.com/image.jpg",

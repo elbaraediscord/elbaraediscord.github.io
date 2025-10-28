@@ -6,8 +6,8 @@ import { ArrowLeft, Calendar, User, Share2 } from "lucide-react";
 const blogPostsData: Record<string, any> = {
   "future-of-ai-in-enterprise": {
     title: "The Future of AI in Enterprise",
-    author: "Alex Kumar",
-    date: "2024-10-20",
+    author: "X",
+    date: "2025-10-20",
     category: "AI",
     readTime: "8 min read",
     image: "https://images.unsplash.com/photo-1677442d019cecf8d9f6c4e4e4e4e4e?w=800&h=400&fit=crop",
@@ -46,8 +46,8 @@ const blogPostsData: Record<string, any> = {
   },
   "building-scalable-data-pipelines": {
     title: "Building Scalable Data Pipelines",
-    author: "Jordan Martinez",
-    date: "2024-10-15",
+    author: "X",
+    date: "2025-10-15",
     category: "Data",
     readTime: "10 min read",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
@@ -88,8 +88,8 @@ const blogPostsData: Record<string, any> = {
   },
   "cloud-cost-optimization-strategies": {
     title: "Cloud Cost Optimization Strategies",
-    author: "Casey Chen",
-    date: "2024-10-10",
+    author: "X",
+    date: "2025-10-10",
     category: "Cloud",
     readTime: "7 min read",
     image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&h=400&fit=crop",
@@ -130,8 +130,8 @@ const blogPostsData: Record<string, any> = {
   },
   "machine-learning-in-production": {
     title: "Machine Learning in Production",
-    author: "Morgan Lee",
-    date: "2024-10-05",
+    author: "X",
+    date: "2025-10-05",
     category: "AI",
     readTime: "12 min read",
     image: "https://images.unsplash.com/photo-1677442d019cecf8d9f6c4e4e4e4e4e?w=800&h=400&fit=crop",
@@ -188,8 +188,8 @@ const blogPostsData: Record<string, any> = {
   },
   "realtime-analytics-streaming-data": {
     title: "Real-Time Analytics with Streaming Data",
-    author: "Alex Kumar",
-    date: "2024-09-30",
+    author: "X",
+    date: "2025-09-30",
     category: "Data",
     readTime: "9 min read",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
@@ -232,8 +232,8 @@ const blogPostsData: Record<string, any> = {
   },
   "kubernetes-best-practices": {
     title: "Kubernetes Best Practices",
-    author: "Casey Chen",
-    date: "2024-09-25",
+    author: "X",
+    date: "2025-09-25",
     category: "Cloud",
     readTime: "11 min read",
     image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&h=400&fit=crop",

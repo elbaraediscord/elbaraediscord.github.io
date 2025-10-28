@@ -10,83 +10,84 @@ const allProjects = [
     title: "Neural Vision Platform",
     category: "AI",
     description: "Advanced computer vision system for real-time object detection and classification using state-of-the-art deep learning models",
-    image: "https://images.unsplash.com/photo-1677442d019cecf8d9f6c4e4e4e4e4e?w=500&h=300&fit=crop",
+    image: "Image 1.jpg",
     slug: "neural-vision-platform",
-    year: 2024,
+    year: 2025,
   },
   {
     id: 2,
     title: "Data Pipeline Architecture",
     category: "Data",
     description: "Scalable ETL pipeline processing millions of records daily with real-time analytics and data quality monitoring",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+    image: "Image 2.jpg",
     slug: "data-pipeline-architecture",
-    year: 2024,
+    year: 2025,
   },
   {
     id: 3,
     title: "Cloud Infrastructure Optimization",
     category: "Cloud",
     description: "Reduced cloud costs by 40% through intelligent resource allocation, auto-scaling, and infrastructure optimization",
-    image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=500&h=300&fit=crop",
+    image: "Image 3.jpg",
     slug: "cloud-infrastructure-optimization",
-    year: 2023,
+    year: 2025,
   },
   {
     id: 4,
     title: "Robotics Control System",
     category: "Robotics",
     description: "Autonomous robotics control system with machine learning-based path planning and obstacle avoidance",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
+    image: "Image 4.jpg",
     slug: "robotics-control-system",
-    year: 2023,
+    year: 2025,
   },
   {
     id: 5,
     title: "E-Commerce Platform",
     category: "Web",
     description: "Full-stack e-commerce platform with AI-powered recommendations and real-time inventory management",
-    image: "https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=500&h=300&fit=crop",
+    image: "Image 5.jpg",
     slug: "ecommerce-platform",
-    year: 2023,
+    year: 2025,
   },
   {
     id: 6,
     title: "Predictive Analytics Engine",
     category: "AI",
     description: "Machine learning engine for predictive analytics, forecasting demand and identifying market trends",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+    image: "Image 6.jpg",
     slug: "predictive-analytics-engine",
-    year: 2024,
+    year: 2025,
   },
   {
     id: 7,
     title: "Real-Time Data Warehouse",
     category: "Data",
     description: "Enterprise data warehouse supporting real-time queries and complex analytical workloads",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
+    image: "Image 7.jpg",
     slug: "realtime-data-warehouse",
-    year: 2023,
+    year: 2025,
   },
   {
     id: 8,
     title: "Kubernetes Migration",
     category: "Cloud",
     description: "Migrated legacy applications to Kubernetes, improving scalability and reducing operational overhead",
-    image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=500&h=300&fit=crop",
+    image: "Image 8.jpg",
     slug: "kubernetes-migration",
-    year: 2023,
+    year: 2025,
   },
   {
     id: 9,
     title: "Autonomous Delivery Robot",
     category: "Robotics",
     description: "Autonomous delivery robot with computer vision, GPS navigation, and real-time traffic awareness",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop",
+    image: "Image 9.jpg",
     slug: "autonomous-delivery-robot",
-    year: 2024,
+    year: 2025,
   },
 ];
+
 
 const categories = ["All", "AI", "Data", "Cloud", "Web", "Robotics"];
 
@@ -178,10 +179,10 @@ export default function Projects() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             {[
-              { label: "Projects Completed", value: "50+" },
-              { label: "Clients Served", value: "30+" },
-              { label: "Team Members", value: "25+" },
-              { label: "Years Experience", value: "15+" },
+              { label: "Projects Completed", value: "9+" },
+               {/* { label: "Clients Served", value: "X" }, */}
+              { label: "Team Members", value: "5+" },
+              {/* { label: "Years Experience", value: "15+" }, */}
             ].map((stat, idx) => (
               <div key={idx}>
                 <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">

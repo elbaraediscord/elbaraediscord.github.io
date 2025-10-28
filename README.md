@@ -265,7 +265,7 @@ This project is open source and available under the MIT License.
 
 ## Support
 
-For questions or issues, please reach out to hello@hikmanova.com
+For questions or issues, please reach out to info@hikmanova.com
 
 ## Changelog
 

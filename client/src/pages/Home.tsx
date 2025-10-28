@@ -9,7 +9,7 @@ const featuredProjects = [
     title: "Neural Vision Platform",
     category: "AI",
     description: "Advanced computer vision system for real-time object detection and classification",
-    image: "https://images.unsplash.com/photo-1677442d019cecf8d9f6c4e4e4e4e4e?w=500&h=300&fit=crop",
+    image: "Image 1.jpg",
     slug: "neural-vision-platform",
   },
   {
@@ -17,7 +17,7 @@ const featuredProjects = [
     title: "Data Pipeline Architecture",
     category: "Data",
     description: "Scalable ETL pipeline processing millions of records daily with real-time analytics",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+    image: "Image 2.jpg",
     slug: "data-pipeline-architecture",
   },
   {
@@ -25,7 +25,7 @@ const featuredProjects = [
     title: "Cloud Infrastructure Optimization",
     category: "Cloud",
     description: "Reduced cloud costs by 40% through intelligent resource allocation and auto-scaling",
-    image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?w=500&h=300&fit=crop",
+    image: "Image 3.jpg",
     slug: "cloud-infrastructure-optimization",
   },
 ];
@@ -188,7 +188,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      
       {/* Services */}
       <section className="py-16 md:py-24 bg-card">
         <div className="container">
@@ -214,7 +214,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials 
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="text-center mb-12">
@@ -244,6 +244,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">

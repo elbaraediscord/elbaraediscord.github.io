@@ -81,10 +81,10 @@ export default function Contact() {
               </div>
               <h3 className="font-serif font-bold text-lg mb-2">Email</h3>
               <a
-                href="mailto:hello@hikmanova.com"
+                href="mailto:info@hikmanova.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                hello@hikmanova.com
+                info@hikmanova.com
               </a>
             </div>
 
@@ -94,10 +94,10 @@ export default function Contact() {
               </div>
               <h3 className="font-serif font-bold text-lg mb-2">Phone</h3>
               <a
-                href="tel:+1234567890"
+                href="tel:+966539802238"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                +1 (234) 567-890
+                +966 53 980 2238
               </a>
             </div>
 
@@ -107,8 +107,8 @@ export default function Contact() {
               </div>
               <h3 className="font-serif font-bold text-lg mb-2">Location</h3>
               <p className="text-muted-foreground">
-                San Francisco, CA<br />
-                United States
+                Algiers<br />
+                Algeria
               </p>
             </div>
           </div>
