@@ -1,7 +1,7 @@
 # GitHub Pages Deployment Guide for HikmaNova
 
 This guide will walk you through deploying HikmaNova to GitHub Pages at:
-**https://elbaraediscord.github.io/hikmanova-test/**
+**https://elbaraediscord.github.io/elbaraediscord.github.io/**
 
 ## Prerequisites
 
@@ -13,7 +13,7 @@ This guide will walk you through deploying HikmaNova to GitHub Pages at:
 
 1. Go to https://github.com/new
 2. Fill in the repository details:
-   - **Repository name**: `hikmanova-test`
+   - **Repository name**: `elbaraediscord.github.io`
    - **Description**: HikmaNova - Innovation & Technology Portfolio
    - **Public**: Yes (required for GitHub Pages)
    - **Initialize with**: Leave empty (we'll push existing code)
@@ -34,7 +34,7 @@ git add .
 git commit -m "Initial commit: HikmaNova portfolio website"
 
 # Add remote repository
-git remote add origin https://github.com/elbaraediscord/hikmanova-test.git
+git remote add origin https://github.com/elbaraediscord/elbaraediscord.github.io.git
 
 # Rename branch to main (if needed)
 git branch -M main
@@ -45,7 +45,7 @@ git push -u origin main
 
 ## Step 3: Enable GitHub Pages
 
-1. Go to your repository: https://github.com/elbaraediscord/hikmanova-test
+1. Go to your repository: https://github.com/elbaraediscord/elbaraediscord.github.io
 2. Click **Settings** (top right)
 3. In the left sidebar, click **Pages**
 4. Under "Build and deployment":
@@ -58,7 +58,7 @@ GitHub will now build and deploy your site. This may take 1-2 minutes.
 ## Step 4: Verify Deployment
 
 After a few minutes, your site will be live at:
-**https://elbaraediscord.github.io/hikmanova-test/**
+**https://elbaraediscord.github.io/elbaraediscord.github.io/**
 
 You can check the deployment status:
 1. Go to your repository
@@ -121,7 +121,7 @@ git push
 - Verify the branch is set to `main` in Pages settings
 
 ### Styles not loading
-- This is likely due to the base path. The `vite.config.ts` has been configured with `base: '/hikmanova-test/'`
+- This is likely due to the base path. The `vite.config.ts` has been configured with `base: '/elbaraediscord.github.io/'`
 - If styles still don't load, check the browser console for 404 errors
 
 ### 404 on page refresh

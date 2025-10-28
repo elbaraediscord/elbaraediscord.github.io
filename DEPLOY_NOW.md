@@ -1,7 +1,7 @@
 # 🚀 Deploy HikmaNova to GitHub Pages - Quick Start
 
 Your HikmaNova website is ready to deploy! Follow these simple steps to get it live at:
-**https://elbaraediscord.github.io/hikmanova-test/**
+**https://elbaraediscord.github.io/elbaraediscord.github.io/**
 
 ---
 
@@ -9,7 +9,7 @@ Your HikmaNova website is ready to deploy! Follow these simple steps to get it l
 
 - ✓ Website fully built and tested
 - ✓ Production build created (`dist/public/`)
-- ✓ Vite configured with correct base path (`/hikmanova-test/`)
+- ✓ Vite configured with correct base path (`/elbaraediscord.github.io/`)
 - ✓ Git repository initialized
 - ✓ All files committed and ready to push
 
@@ -21,7 +21,7 @@ Your HikmaNova website is ready to deploy! Follow these simple steps to get it l
 
 1. Open https://github.com/new
 2. Enter these details:
-   - **Repository name**: `hikmanova-test`
+   - **Repository name**: `elbaraediscord.github.io`
    - **Description**: HikmaNova - Innovation & Technology Portfolio
    - **Visibility**: Public ⭐ (Required for GitHub Pages)
    - **Initialize repository**: Leave unchecked
@@ -32,7 +32,7 @@ Your HikmaNova website is ready to deploy! Follow these simple steps to get it l
 Copy and paste these commands into your terminal (in the hikmanova project folder):
 
 ```bash
-git remote add origin https://github.com/elbaraediscord/hikmanova-test.git
+git remote add origin https://github.com/elbaraediscord/elbaraediscord.github.io.git
 git branch -M main
 git push -u origin main
 ```
@@ -44,7 +44,7 @@ git push -u origin main
 
 ### Step 3: Enable GitHub Pages
 
-1. Go to your repository: https://github.com/elbaraediscord/hikmanova-test
+1. Go to your repository: https://github.com/elbaraediscord/elbaraediscord.github.io
 2. Click **Settings** (top right of the page)
 3. In the left sidebar, click **Pages**
 4. Under "Build and deployment":
@@ -57,14 +57,14 @@ git push -u origin main
 
 GitHub will now build and deploy your site. This takes 1-2 minutes.
 
-You'll see a message: "Your site is live at https://elbaraediscord.github.io/hikmanova-test/"
+You'll see a message: "Your site is live at https://elbaraediscord.github.io/elbaraediscord.github.io/"
 
 ---
 
 ## ✨ Your Site is Live!
 
 Once deployment completes, visit:
-**https://elbaraediscord.github.io/hikmanova-test/**
+**https://elbaraediscord.github.io/elbaraediscord.github.io/**
 
 ---
 
@@ -147,7 +147,7 @@ git push origin main
 
 ### "Repository not found" error
 - Make sure you created the repository on GitHub first
-- Check that the URL is correct: `https://github.com/elbaraediscord/hikmanova-test.git`
+- Check that the URL is correct: `https://github.com/elbaraediscord/elbaraediscord.github.io.git`
 
 ### Site shows 404 or blank page
 - Wait 2-3 minutes for GitHub Pages to finish building
