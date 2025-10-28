@@ -1,7 +1,7 @@
 # GitHub Pages Deployment Guide for HikmaNova
 
 This guide will walk you through deploying HikmaNova to GitHub Pages at:
-**https://elbaraediscord.github.io/elbaraediscord.github.io/**
+**https://elbaraediscord.github.io/**
 
 ## Prerequisites
 
@@ -58,7 +58,7 @@ GitHub will now build and deploy your site. This may take 1-2 minutes.
 ## Step 4: Verify Deployment
 
 After a few minutes, your site will be live at:
-**https://elbaraediscord.github.io/elbaraediscord.github.io/**
+**https://elbaraediscord.github.io/**
 
 You can check the deployment status:
 1. Go to your repository
@@ -121,7 +121,7 @@ git push
 - Verify the branch is set to `main` in Pages settings
 
 ### Styles not loading
-- This is likely due to the base path. The `vite.config.ts` has been configured with `base: '/elbaraediscord.github.io/'`
+- This is likely due to the base path. The `vite.config.ts` has been configured with `base: '/'`
 - If styles still don't load, check the browser console for 404 errors
 
 ### 404 on page refresh

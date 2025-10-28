@@ -1,7 +1,7 @@
 # 🚀 Deploy HikmaNova to GitHub Pages - Quick Start
 
 Your HikmaNova website is ready to deploy! Follow these simple steps to get it live at:
-**https://elbaraediscord.github.io/elbaraediscord.github.io/**
+**https://elbaraediscord.github.io/**
 
 ---
 
@@ -9,7 +9,7 @@ Your HikmaNova website is ready to deploy! Follow these simple steps to get it l
 
 - ✓ Website fully built and tested
 - ✓ Production build created (`dist/public/`)
-- ✓ Vite configured with correct base path (`/elbaraediscord.github.io/`)
+- ✓ Vite configured with correct base path (`/`)
 - ✓ Git repository initialized
 - ✓ All files committed and ready to push
 
@@ -57,14 +57,14 @@ git push -u origin main
 
 GitHub will now build and deploy your site. This takes 1-2 minutes.
 
-You'll see a message: "Your site is live at https://elbaraediscord.github.io/elbaraediscord.github.io/"
+You'll see a message: "Your site is live at https://elbaraediscord.github.io/"
 
 ---
 
 ## ✨ Your Site is Live!
 
 Once deployment completes, visit:
-**https://elbaraediscord.github.io/elbaraediscord.github.io/**
+**https://elbaraediscord.github.io/**
 
 ---
 
