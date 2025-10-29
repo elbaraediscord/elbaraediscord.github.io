@@ -18,7 +18,7 @@ const values = [
 
 const team = [
   {
-    name: "Eng. Ibrahim Lasouani",
+    name: "Eng. Ibrahim L.",
     role: "Founder",
     bio: "Keeps teams aligned, goals clear, and every project delivered flawlessly",
     avatar: "Anonymous.jpg",
