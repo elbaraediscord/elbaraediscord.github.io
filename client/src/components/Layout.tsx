@@ -110,7 +110,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <h3 className="font-serif text-lg font-bold mb-4">HikmaNova</h3>
               <p className="text-sm text-muted-foreground">
-                Innovation and technology portfolio showcasing cutting-edge projects and AI solutions.
+                Innovation and technology portfolio showcasing cutting-edge projects and AI-powered solutions.
               </p>
             </div>
 

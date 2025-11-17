@@ -20,31 +20,19 @@ const team = [
   {
     name: "Eng. Ibrahim L.",
     role: "Founder",
-    bio: "Keeps teams aligned, goals clear, and every project delivered flawlessly",
-    avatar: "Anonymous.jpg",
-  },
-  {
-    name: "Dr. Mohamed Tounsi",
-    role: "Co-Founder",
-    bio: "Dedicated to turning complex challenges into clear, practical outcomes",
-    avatar: "Anonymous.jpg",
-  },
-  {
-    name: "Eng. Boumedienne",
-    role: "Cybersecurity Expert",
-    bio: "Protects digital systems through strategy, vigilance, and advanced security solution",
+    bio: "Keeps teams aligned, goals clear, and every project delivered flawlessly.",
     avatar: "Anonymous.jpg",
   },
   {
     name: "Mr. Hicham",
-    role: "Associate",
+    role: "Co-Founder",
     bio: "Strives to bridge innovation, functionality, and real-world human needs.",
     avatar: "Anonymous.jpg",
   },
-    {
-    name: "ElBarae Tounsi",
-    role: "Collaborator",
-    bio: "Passionate coder blending creativity and precision to craft seamless digital systems",
+  {
+    name: "Eng. Ayoub G.",
+    role: "Co-Founder",
+    bio: "Innovative engineer solving complex technical challenges with precision and creativity.",
     avatar: "Anonymous.jpg",
   },
 ];
@@ -60,7 +48,7 @@ const timeline = [
   {
     year: "2025",
     title: "First Major Project",
-    description: "Delivered AI solution for Fortune 500 company, processing 10M+ records daily",
+    description: "Delivered AI-powered solution for Fortune 500 company, processing 10M+ records daily",
   },
   {
     year: "2025",
@@ -102,7 +90,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Our Mission</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                To empower organizations through innovative AI solutions and scalable technology platforms that drive measurable business impact.
+                To empower organizations through innovative AI-powered solutions and scalable technology platforms that drive measurable business impact.
               </p>
               <p className="text-lg text-muted-foreground mb-6">
                 We believe that technology should be accessible, ethical, and designed with purpose. Every project we undertake is an opportunity to create solutions that matter.

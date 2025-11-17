@@ -91,7 +91,7 @@ export default function Home() {
               Innovation Through Technology
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              We build cutting-edge AI solutions, scalable data platforms, and innovative products that drive real business impact.
+              We build cutting-edge AI-powered solutions, scalable data platforms, and innovative products that drive real business impact.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/projects">
