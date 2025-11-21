@@ -10,7 +10,7 @@ const allProjects = [
     title: "Cryptocurrency Investment Platform",
     category: "Web",
     description: "Comprehensive cryptocurrency exchange platform designed to help agencies manage customer portfolios with real-time trading, secure wallets, and advanced analytics",
-    image: "/projects/cryptocurrency-investment-platform.jpg",
+    image: "cryptocurrency-investment-platform.jpg",
     slug: "cryptocurrency-investment-platform",
     year: 2023,
   },
@@ -19,7 +19,7 @@ const allProjects = [
     title: "Smart Chatbot for Customer Service",
     category: "AI",
     description: "AI-powered chatbot system that handles thousands of customer service requests on social media platforms with natural language processing and automated responses",
-    image: "/projects/smart-chatbot-ai.jpg",
+    image: "smart-chatbot-ai.jpg",
     slug: "smart-chatbot-customer-service",
     year: 2023,
   },
@@ -28,7 +28,7 @@ const allProjects = [
     title: "Intervention Vouchers ERP System",
     category: "Web",
     description: "Enterprise resource planning solution built on Axonaut for managing artisan intervention vouchers, scheduling, and work order tracking with customer management",
-    image: "/projects/intervention-vouchers-erp.jpg",
+    image: "intervention-vouchers-erp.jpg",
     slug: "intervention-vouchers-erp",
     year: 2023,
   },
@@ -37,7 +37,7 @@ const allProjects = [
     title: "Cybersecurity Consulting & Audit Services",
     category: "Web",
     description: "Comprehensive cybersecurity consulting platform offering organizational audits, compliance evaluation, penetration testing, and security solution deployment",
-    image: "/projects/cybersecurity-consulting.jpg",
+    image: "cybersecurity-consulting.jpg",
     slug: "cybersecurity-consulting-audit",
     year: 2024,
   },
@@ -46,7 +46,7 @@ const allProjects = [
     title: "Technological Dependency Research Series",
     category: "Data",
     description: "Educational webinar and conference series exploring technological dependency in software development, cybersecurity solutions, and the role of expertise in innovation",
-    image: "/projects/technological-dependency-series.jpg",
+    image: "technological-dependency-series.jpg",
     slug: "technological-dependency-research",
     year: 2024,
   },
@@ -180,7 +180,7 @@ export default function Projects() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProjects.map((project) => (
-              <Link key={project.id} href={`/projects/${project.slug}`}>
+              <Link key={project.id} href={`${project.slug}`}>
                 <a className="group card-hover rounded-lg overflow-hidden bg-card border border-border h-full flex flex-col">
                   <div className="relative overflow-hidden h-48 bg-muted">
                     <img
