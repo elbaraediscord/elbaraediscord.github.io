@@ -12,6 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
+     { label: "Managed Services", href: "/managed-services" },
     { label: "Projects", href: "/projects" },
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
