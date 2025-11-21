@@ -82,7 +82,7 @@ export default function ManagedServices() {
         <div className="container">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight">
-              Managed Services & Outsourcing
+              Managed Services
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
               Comprehensive solutions for your innovation needs. Leverage our deep technical expertise across AI, IoT, mobile, and cloud infrastructure.
