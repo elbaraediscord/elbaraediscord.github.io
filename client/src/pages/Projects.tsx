@@ -180,7 +180,7 @@ export default function Projects() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProjects.map((project) => (
-              <Link key={project.id} href={`${project.slug}`}>
+              <Link key={project.id} href={`/projects/${project.slug}`}>
                 <a className="group card-hover rounded-lg overflow-hidden bg-card border border-border h-full flex flex-col">
                   <div className="relative overflow-hidden h-48 bg-muted">
                     <img
