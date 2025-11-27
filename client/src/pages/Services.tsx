@@ -8,12 +8,7 @@ const services = [
     icon: Brain,
     title: "AI Strategy & Consulting",
     description: "Develop comprehensive AI strategies tailored to your business goals and market positioning",
-    features: [
-      "AI capability assessment",
-      "Use case identification",
-      "Technology roadmap planning",
-      "Risk and compliance analysis",
-    ],
+
   },
   {
     icon: Code,
