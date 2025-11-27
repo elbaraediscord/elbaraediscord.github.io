@@ -246,7 +246,7 @@ export default function Projects() {
               { label: "Projects Completed", value: "9+" },
               
               { label: "Team Members", value: "5+" },
-              { label: "of expertise, built by top specialists", value: "Over a decade" }, 
+              { label: "years of expertise, established by seasoned professionalse", value: "10+" }, 
             ].map((stat, idx) => (
               <div key={idx}>
                 <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">
