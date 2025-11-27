@@ -194,11 +194,11 @@ export default function Contact() {
             
             <input type="hidden" name="_replyto" value={formData.email} />
 
-              <input
-                type="hidden"
-                name="_next"
-                value="https://your-domain.com/thank-you"
-              />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://hikmanova.com/contact"
+            />
 
             <Button
               type="submit"
