@@ -150,7 +150,7 @@ export default function Contact() {
                 <input
                   type="email"
                   id="email"
-                  name="_replyto"
+                  name="email"
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="your@email.com"
@@ -159,7 +159,7 @@ export default function Contact() {
                 />
               </div>
             </div>
-
+          
             <div>
               <label htmlFor="subject" className="block text-sm font-semibold mb-2">
                 Subject
@@ -191,6 +191,9 @@ export default function Contact() {
                 required
               />
             </div>
+            
+            <input type="hidden" name="_replyto" value={formData.email} />
+
 
             <Button
               type="submit"
