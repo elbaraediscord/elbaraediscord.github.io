@@ -136,7 +136,7 @@ const allProjects = [
     title: "TeamMonitor - AI-Powered Workforce Tracking & Management Solution",
     category: "AI",
     description: "Innovative solution to address the operational challenges of managing field teams during the FIFA World Cup 2022",
-    image: "Image 4.jpg",
+    image: "Qatar-World-Cup.jpg",
     slug: "fifa-team-monitor",
     year: 2025,
   },
@@ -145,7 +145,7 @@ const allProjects = [
     title: "Nusuk Smart Card Enhancement",
     category: "AI",
     description: "An innovative project designed to upgrade the Nusuk smart card by integrating advanced technologies with artificial intelligence.",
-    image: "Image 4.jpg",
+    image: "Nusuk-Card.jpg",
     slug: "Nusuk-smart-crad",
     year: 2025,
   },
@@ -246,7 +246,7 @@ export default function Projects() {
               
               { label: "Projects Completed", value: "9+" },
               { label: "Team Members", value: "5+" },
-              { label: "years of expertise, established by seasoned professionalse", value: "10+" }, 
+              { label: "of expertise, established by seasoned professionalse", value: "10 years" }, 
               
             ].map((stat, idx) => (
               <div key={idx}>

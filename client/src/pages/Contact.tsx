@@ -125,7 +125,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form action="https://formspree.io/f/mkglzgqd" method="POST" className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold mb-2">
@@ -150,7 +150,7 @@ export default function Contact() {
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="_replyto"
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="your@email.com"
@@ -254,7 +254,7 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA 
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Start Your Project?</h2>
@@ -265,7 +265,7 @@ export default function Contact() {
             Schedule a Call
           </Button>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 }

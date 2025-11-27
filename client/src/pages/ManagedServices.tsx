@@ -88,12 +88,16 @@ export default function ManagedServices() {
               Comprehensive solutions for your innovation needs. Leverage our deep technical expertise across AI, IoT, mobile, and cloud infrastructure.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/projects">
               <Button size="lg" className="gap-2">
                 Explore Our Expertise <ArrowRight className="w-4 h-4" />
               </Button>
+              </Link>
+              <Link href="/projects">
               <Button size="lg" variant="outline">
                 Schedule Consultation
               </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -285,12 +289,16 @@ export default function ManagedServices() {
             Let's discuss how our managed services can accelerate your innovation and reduce time-to-market.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
             <Button size="lg" variant="secondary" className="gap-2">
               Schedule a Consultation <ArrowRight className="w-4 h-4" />
             </Button>
+            </Link>
+            <Link href="/projects">
             <Button size="lg" variant="outline" className="text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary">
               View Case Studies
             </Button>
+            </Link>
           </div>
         </div>
       </section>
