@@ -244,7 +244,7 @@ export default function Projects() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             {[
               { label: "Projects Completed", value: "9+" },
-              
+              { label: "", value: "" },
               { label: "Team Members", value: "5+" },
               { label: "years of expertise, established by seasoned professionalse", value: "10+" }, 
             ].map((stat, idx) => (
