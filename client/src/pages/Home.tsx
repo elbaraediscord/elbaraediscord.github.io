@@ -57,23 +57,23 @@ const testimonials = [
 const services = [
   {
     icon: Brain,
+    title: "End-to-End Software Development",
+    description: "Complete software solutions including mobile apps, web applications, backend systems, and cloud infrastructure",
+  },
+  {
+    icon: Code,
     title: "AI Strategy",
     description: "Develop comprehensive AI strategies tailored to your business goals",
   },
   {
-    icon: Code,
-    title: "MLOps",
-    description: "Build and deploy machine learning models at scale with confidence",
-  },
-  {
     icon: Zap,
-    title: "Data Platforms",
-    description: "Design robust data infrastructure for analytics and insights",
+    title: "Product Prototyping",
+    description: "Rapid prototyping and MVP development for innovative ideas",
   },
   {
     icon: Rocket,
-    title: "Product Prototyping",
-    description: "Rapid prototyping and MVP development for innovative ideas",
+    title: "IoT Solutions",
+    description: "Design and deploy end-to-end IoT & IIoT systems, from device integration to cloud platforms and real-time data visualization",
   },
 ];
 

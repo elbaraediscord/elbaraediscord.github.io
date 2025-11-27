@@ -8,11 +8,11 @@ const allProjects = [
     {
     id: 1,
     title: "Cryptocurrency Investment Platform",
-    category: "Web",
+    category: "Software Engineering",
     description: "Comprehensive cryptocurrency exchange platform designed to help agencies manage customer portfolios with real-time trading, secure wallets, and advanced analytics",
     image: "cryptocurrency-investment-platform.jpg",
     slug: "cryptocurrency-investment-platform",
-    year: 2023,
+    year: 2025,
   },
   {
     id: 2,
@@ -21,25 +21,25 @@ const allProjects = [
     description: "AI-powered chatbot system that handles thousands of customer service requests on social media platforms with natural language processing and automated responses",
     image: "smart-chatbot-ai.jpg",
     slug: "smart-chatbot-customer-service",
-    year: 2023,
+    year: 2025,
   },
   {
     id: 3,
     title: "Intervention Vouchers ERP System",
-    category: "Web",
+    category: "Software Engineering",
     description: "Enterprise resource planning solution built on Axonaut for managing artisan intervention vouchers, scheduling, and work order tracking with customer management",
     image: "intervention-vouchers-erp.jpg",
     slug: "intervention-vouchers-erp",
-    year: 2023,
+    year: 2025,
   },
   {
     id: 4,
     title: "Cybersecurity Consulting & Audit Services",
-    category: "Web",
+    category: "Software Engineering",
     description: "Comprehensive cybersecurity consulting platform offering organizational audits, compliance evaluation, penetration testing, and security solution deployment",
     image: "cybersecurity-consulting.jpg",
     slug: "cybersecurity-consulting-audit",
-    year: 2024,
+    year: 2025,
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const allProjects = [
     description: "Educational webinar and conference series exploring technological dependency in software development, cybersecurity solutions, and the role of expertise in innovation",
     image: "technological-dependency-series.jpg",
     slug: "technological-dependency-research",
-    year: 2024,
+    year: 2025,
   },
   {
     id: 10,
@@ -80,7 +80,7 @@ const allProjects = [
   {
     id: 13,
     title: "Robotics Control System",
-    category: "Robotics",
+    category: "IoT & IIoT",
     description: "Autonomous robotics control system with machine learning-based path planning and obstacle avoidance",
     image: "Image 4.jpg",
     slug: "robotics-control-system",
@@ -89,7 +89,7 @@ const allProjects = [
   {
     id: 5,
     title: "E-Commerce Platform",
-    category: "Web",
+    category: "Software Engineering",
     description: "Full-stack e-commerce platform with AI-powered recommendations and real-time inventory management",
     image: "Image 5.jpg",
     slug: "ecommerce-platform",
@@ -125,16 +125,34 @@ const allProjects = [
   {
     id: 9,
     title: "Autonomous Delivery Robot",
-    category: "Robotics",
+    category: "IoT & IIoT",
     description: "Autonomous delivery robot with computer vision, GPS navigation, and real-time traffic awareness",
     image: "Image 9.jpg",
     slug: "autonomous-delivery-robot",
     year: 2025,
   },
+  {
+    id: 14,
+    title: "TeamMonitor - AI-Powered Workforce Tracking & Management Solution",
+    category: "AI",
+    description: "Innovative solution to address the operational challenges of managing field teams during the FIFA World Cup 2022",
+    image: "Image 4.jpg",
+    slug: "fifa-team-monitor",
+    year: 2025,
+  },
+  {
+    id: 15,
+    title: "Nusuk Smart Card Enhancement",
+    category: "AI",
+    description: "An innovative project designed to upgrade the Nusuk smart card by integrating advanced technologies with artificial intelligence.",
+    image: "Image 4.jpg",
+    slug: "Nusuk-smart-crad",
+    year: 2025,
+  },
 ];
 
 
-const categories = ["All", "AI", "Data", "Cloud", "Web", "Robotics"];
+const categories = ["All", "AI", "Data", "Cloud", "Software Engineering", "IoT & IIoT"];
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -220,14 +238,15 @@ export default function Projects() {
       </section>
 
       {/* Stats */}
+      {/* { label: "Clients Served", value: "X" }, */}
       <section className="py-16 md:py-24 bg-card">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             {[
               { label: "Projects Completed", value: "9+" },
-              { label: "Clients Served", value: "X" }, 
+              
               { label: "Team Members", value: "5+" },
-              { label: "Years Experience", value: "X" }, 
+              { label: "of expertise, built by top specialists", value: "Over a decade" }, 
             ].map((stat, idx) => (
               <div key={idx}>
                 <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">

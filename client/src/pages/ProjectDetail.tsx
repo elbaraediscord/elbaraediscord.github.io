@@ -60,7 +60,7 @@ const projectsData: Record<string, any> = {
   },
   "robotics-control-system": {
     title: "Robotics Control System",
-    category: "Robotics",
+    category: "IoT & IIoT",
     year: 2025,
     description: "Autonomous robotics control system with ML-based path planning",
     image: "../Image 4.jpg",
@@ -78,7 +78,7 @@ const projectsData: Record<string, any> = {
   },
   "ecommerce-platform": {
     title: "E-Commerce Platform",
-    category: "Web",
+    category: "Software Engineering",
     year: 2025,
     description: "Full-stack e-commerce platform with AI recommendations",
     image: "../Image 5.jpg",
@@ -150,7 +150,7 @@ const projectsData: Record<string, any> = {
   },
   "autonomous-delivery-robot": {
     title: "Autonomous Delivery Robot",
-    category: "Robotics",
+    category: "IoT & IIoT",
     year: 2025,
     description: "Autonomous delivery robot with computer vision and navigation",
     image: "../Image 9.jpg",
