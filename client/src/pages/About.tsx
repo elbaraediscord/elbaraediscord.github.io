@@ -171,8 +171,8 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      {/* Timeline */}
+            
+      {/* Timeline 
       <section className="py-16 md:py-24 bg-card">
         <div className="container">
           <div className="text-center mb-12">
@@ -202,7 +202,8 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+      
     </Layout>
   );
 }

@@ -241,12 +241,13 @@ export default function Projects() {
       {/* { label: "Clients Served", value: "X" }, */}
       <section className="py-16 md:py-24 bg-card">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {[
+              
               { label: "Projects Completed", value: "9+" },
-              { label: "", value: "" },
               { label: "Team Members", value: "5+" },
               { label: "years of expertise, established by seasoned professionalse", value: "10+" }, 
+              
             ].map((stat, idx) => (
               <div key={idx}>
                 <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">
