@@ -241,7 +241,7 @@ export default function Projects() {
       {/* { label: "Clients Served", value: "X" }, */}
       <section className="py-16 md:py-24 bg-card">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             {[
               { label: "Projects Completed", value: "9+" },
               
