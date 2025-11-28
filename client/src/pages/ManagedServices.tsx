@@ -282,7 +282,7 @@ export default function ManagedServices() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section 
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Outsource Your Project?</h2>
@@ -302,7 +302,7 @@ export default function ManagedServices() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 }
