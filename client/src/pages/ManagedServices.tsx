@@ -87,6 +87,7 @@ export default function ManagedServices() {
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
               Comprehensive solutions for your innovation needs. Leverage our deep technical expertise across AI, IoT, mobile, and cloud infrastructure.
             </p>
+            {/* Hero Section 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/projects">
               <Button size="lg" className="gap-2">
@@ -98,7 +99,7 @@ export default function ManagedServices() {
                 Schedule Consultation
               </Button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
