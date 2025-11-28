@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const allProjects = [
-    const allProjects = [
   {
     id: 1,
     title: "TeamMonitor - AI-Powered Workforce Tracking & Management Solution",
@@ -151,8 +150,8 @@ const allProjects = [
     year: 2025,
   },
 
-  ];
 ];
+
 
 
 
