@@ -1,961 +1,820 @@
 export const translations = {
-  en: {
-    // Navigation
-    nav: {
-      home: 'Home',
-      about: 'About',
-      services: 'Services',
-      managedServices: 'Managed Services',
-      projects: 'Projects',
-      blog: 'Blog',
-      contact: 'Contact',
-      language: 'Language',
+  "en": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "managedServices": "Managed Services",
+      "projects": "Projects",
+      "blog": "Blog",
+      "contact": "Contact",
+      "language": "Language"
     },
-
-    // Home Page
-    home: {
-      hero: {
-        title: 'Innovation Through Technology',
-        subtitle: 'We build cutting-edge AI solutions, scalable data platforms, and innovative products that drive real business impact.',
-        cta: 'Explore Projects',
-        ctaSecondary: 'Get In Touch',
+    "home": {
+      "hero": {
+        "title": "Innovation Through Technology",
+        "subtitle": "We build cutting-edge AI solutions, scalable data platforms, and innovative products that drive real business impact.",
+        "cta": "Explore Projects",
+        "ctaSecondary": "Get In Touch"
       },
-      projects: {
-        neuralVision: {
-          title: 'Neural Vision Platform',
-          category: 'AI',
-          description: 'Advanced computer vision system for real-time object detection and analysis',
-        },
-        dataPipeline: {
-          title: 'Data Pipeline Architecture',
-          category: 'Data',
-          description: 'Scalable data infrastructure processing millions of events per second',
-        },
-        cloudOptimization: {
-          title: 'Cloud Infrastructure Optimization',
-          category: 'Cloud',
-          description: 'Cost-optimized cloud architecture reducing expenses by 40%',
-        },
+      "featuredProjects": {
+        "title": "Featured Projects",
+        "subtitle": "Showcasing our latest work in AI, data engineering, and cloud infrastructure",
+        "viewAll": "View All Projects"
       },
-      testimonials: {
-        sarah: {
-          name: 'Sarah Johnson',
-          role: 'CTO, TechCorp',
-          content: 'HikmaNova transformed our data infrastructure. Their expertise and dedication were instrumental in our success.',
-        },
-        marcus: {
-          name: 'Marcus Chen',
-          role: 'Product Director, InnovateLabs',
-          content: 'Working with HikmaNova was a game-changer. They delivered beyond expectations and provided excellent support.',
-        },
-        elena: {
-          name: 'Elena Rodriguez',
-          role: 'CEO, DataDriven Inc',
-          content: 'The team at HikmaNova brought innovation and technical excellence to every aspect of our project.',
-        },
+      "services": {
+        "title": "Our Services",
+        "subtitle": "Comprehensive solutions for your innovation needs"
       },
-      services: {
-        softwareDevelopment: {
-          title: 'Software Development',
-          description: 'End-to-end development services for web, mobile, and cloud applications',
-        },
-        aiStrategy: {
-          title: 'AI Strategy',
-          description: 'Comprehensive AI strategy and implementation for enterprise transformation',
-        },
-        productPrototyping: {
-          title: 'Product Prototyping',
-          description: 'Rapid MVP development and product validation',
-        },
-        iotSolutions: {
-          title: 'IoT Solutions',
-          description: 'Complete IoT systems from device integration to cloud platforms',
-        },
+      "howWeWork": {
+        "title": "How We Work",
+        "subtitle": "Our proven process for delivering innovative solutions",
+        "strategy": {
+          "title": "Strategy"
+        }
       },
-      howWeWork: {
-        title: 'How We Work',
-        subtitle: 'Our proven process for delivering innovative solutions',
-        discovery: {
-          title: 'Discovery',
-          desc: 'Understand your goals and challenges',
-        },
-        strategy: {
-          title: 'Strategy',
-          desc: 'Develop balanced solutions and roadmaps',
-        },
-        development: {
-          title: 'Development',
-          desc: 'Build with cutting-edge technologies',
-        },
-        deploy: {
-          title: 'Deploy',
-          desc: 'Launch and optimize for success',
-        },
-      },
-      featuredProjects: {
-        title: 'Featured Projects',
-        subtitle: 'Showcasing our latest work in AI, data engineering, and cloud infrastructure',
-        viewAll: 'View All Projects',
-      },
-      cta: {
-        title: 'Ready to Innovate?',
-        subtitle: "Let's work together to bring your next big idea to life",
-        button: 'Start Your Project',
-      },
+      "cta": {
+        "title": "Ready to Innovate?",
+        "subtitle": "Let's work together to bring your next big idea to life",
+        "button": "Start Your Project"
+      }
     },
-
-    // About Page
-    about: {
-      hero: {
-        title: 'About HikmaNova',
-        subtitle: 'Driving innovation through technology and expertise',
+    "about": {
+      "hero": {
+        "title": "About HikmaNova",
+        "subtitle": "Driving innovation through technology and expertise"
       },
-      mission: {
-        title: 'Our Mission',
-        content: 'To empower organizations with cutting-edge technology solutions that drive digital transformation and create lasting business value.',
-        description1: 'HikmaNova was founded with a vision to transform businesses through innovative technology solutions. We believe that technology should empower organizations, not complicate them.',
-        description2: 'Our team brings together experts from various domains to deliver comprehensive solutions that address real business challenges. We are committed to excellence, innovation, and customer success.',
-        imageAlt: 'HikmaNova Team',
+      "mission": {
+        "title": "Our Mission",
+        "description1": "HikmaNova was founded with a vision to transform businesses through innovative technology solutions.",
+        "description2": "Our team brings together experts from various domains to deliver comprehensive solutions.",
+        "imageAlt": "HikmaNova Team",
+        "point1": "Deliver innovative solutions that drive real business value",
+        "point2": "Build long-term partnerships with our clients",
+        "point3": "Invest in continuous learning and technology advancement"
       },
-      values: {
-        title: 'Our Values',
-        innovation: {
-          title: 'Innovation',
-          description: 'We embrace new technologies and creative problem-solving',
+      "values": {
+        "title": "Our Values",
+        "subtitle": "The principles that guide our work",
+        "innovation": {
+          "title": "Innovation",
+          "description": "We embrace new technologies and creative problem-solving"
         },
-        ethics: {
-          title: 'Ethics',
-          description: 'We operate with integrity and transparency',
+        "ethics": {
+          "title": "Ethics",
+          "description": "We operate with integrity and transparency"
         },
-        education: {
-          title: 'Education',
-          description: 'We invest in knowledge sharing and continuous learning',
-        },
+        "education": {
+          "title": "Education",
+          "description": "We invest in knowledge sharing and continuous learning"
+        }
       },
-      team: {
-        title: 'Our Team',
-        subtitle: 'Expert professionals dedicated to your success',
-      },
-      timeline: {
-        title: 'Our Journey',
-        founded: {
-          year: '2020',
-          title: 'Founded',
-          description: 'HikmaNova was established with a vision to innovate',
+      "team": {
+        "title": "Our Team",
+        "subtitle": "Expert professionals dedicated to your success",
+        "ibrahim": {
+          "name": "Ibrahim Mohamed",
+          "role": "Founder & CEO",
+          "bio": "Visionary leader with 10+ years of experience in AI and cloud technologies"
         },
-        firstProject: {
-          year: '2021',
-          title: 'First Major Project',
-          description: 'Delivered our first enterprise solution',
+        "hicham": {
+          "name": "Hicham Benali",
+          "role": "CTO",
+          "bio": "Expert in software architecture and DevOps with proven track record"
         },
-        expansion: {
-          year: '2023',
-          title: 'Expansion',
-          description: 'Expanded services to include managed services',
-        },
-        present: {
-          year: '2024',
-          title: 'Present',
-          description: 'Serving clients across multiple industries',
-        },
-      },
+        "ayoub": {
+          "name": "Ayoub Saidi",
+          "role": "Lead Data Engineer",
+          "bio": "Specialist in building scalable data platforms and analytics solutions"
+        }
+      }
     },
-
-    // Services Page
-    services: {
-      hero: {
-        title: 'Our Services',
-        subtitle: 'Comprehensive technology solutions tailored to your needs',
+    "services": {
+      "hero": {
+        "title": "Our Services",
+        "subtitle": "Comprehensive technology solutions tailored to your needs"
       },
-      process: {
-        title: 'Our Process',
-        subtitle: 'How we deliver exceptional results',
+      "telecom": {
+        "title": "Telecom & Connectivity Solutions",
+        "description": "Advanced telecommunications infrastructure and connectivity solutions",
+        "feature1": "Network optimization and management",
+        "feature2": "5G and next-generation connectivity",
+        "feature3": "Real-time monitoring and support"
       },
-      why: {
-        title: 'Why Choose HikmaNova',
+      "prototyping": {
+        "title": "Rapid Prototyping & MVP Development",
+        "description": "Fast-track your ideas from concept to market-ready products",
+        "feature1": "Agile development methodology",
+        "feature2": "User-centered design approach",
+        "feature3": "Quick iteration and feedback loops",
+        "feature4": "Production-ready code quality"
       },
-      aiStrategy: {
-        title: 'AI Strategy',
-        description: 'Develop comprehensive AI strategies tailored to your business goals',
+      "iot": {
+        "title": "IoT & Embedded Systems",
+        "description": "End-to-end IoT solutions from device integration to cloud platforms",
+        "feature1": "Device integration and management",
+        "feature2": "Real-time data collection and analysis",
+        "feature3": "Scalable cloud infrastructure",
+        "feature4": "Advanced analytics and visualization"
       },
-      mlops: {
-        title: 'MLOps',
-        description: 'Build and deploy machine learning models at scale with confidence',
+      "aiStrategy": {
+        "title": "AI Strategy & Implementation",
+        "description": "Develop comprehensive AI strategies tailored to your business goals",
+        "feature1": "AI readiness assessment",
+        "feature2": "Custom model development",
+        "feature3": "Enterprise AI deployment",
+        "feature4": "Continuous optimization"
       },
-      dataPlatforms: {
-        title: 'Data Platforms',
-        description: 'Create scalable data infrastructure for analytics and insights',
+      "devops": {
+        "title": "DevOps & Cloud Engineering",
+        "description": "Modern DevOps practices and cloud infrastructure management",
+        "feature1": "CI/CD pipeline automation",
+        "feature2": "Infrastructure as Code",
+        "feature3": "Containerization and orchestration",
+        "feature4": "Monitoring and observability",
+        "feature5": "Cost optimization"
       },
-      cloudPrototyping: {
-        title: 'Cloud & Product Prototyping',
-        description: 'Rapid prototyping and MVP development for innovative ideas',
+      "workforce": {
+        "title": "Workforce Augmentation",
+        "description": "Skilled technical talent to augment your team",
+        "feature1": "Expert developers and engineers",
+        "feature2": "Flexible engagement models",
+        "feature3": "Quick onboarding process",
+        "feature4": "Quality assurance and support",
+        "feature5": "Seamless team integration"
       },
-      iotSolutions: {
-        title: 'IoT Solutions',
-        description: 'Design and deploy end-to-end IoT systems with real-time visualization',
+      "analytics": {
+        "title": "Data Analytics & Business Intelligence",
+        "description": "Transform your data into actionable business insights",
+        "feature1": "Data warehouse design",
+        "feature2": "Advanced analytics dashboards",
+        "feature3": "Predictive modeling",
+        "feature4": "Real-time reporting"
       },
-      softwareDevelopment: {
-        title: 'End-to-End Software Development',
-        description: 'Complete software solutions including mobile, web, and cloud infrastructure',
+      "security": {
+        "title": "Cybersecurity & Compliance",
+        "description": "Protect your assets with comprehensive security solutions",
+        "feature1": "Security audits and assessments",
+        "feature2": "Compliance management",
+        "feature3": "Threat detection and response",
+        "feature4": "Security training and awareness"
       },
-      apiTesting: {
-        title: 'API Performance & Stress Testing',
-        description: 'Ensure reliability and scalability of your APIs through professional testing',
+      "process": {
+        "title": "Our Process",
+        "subtitle": "How we deliver exceptional results",
+        "discovery": {
+          "title": "Discovery & Planning",
+          "description": "Understand your requirements and define the roadmap"
+        },
+        "strategy": {
+          "title": "Strategy & Design",
+          "description": "Develop comprehensive strategy and technical design"
+        },
+        "design": {
+          "title": "Design & Architecture",
+          "description": "Create scalable and robust architecture"
+        },
+        "implementation": {
+          "title": "Implementation",
+          "description": "Build and deploy your solution"
+        },
+        "testing": {
+          "title": "Testing & QA",
+          "description": "Comprehensive testing and quality assurance"
+        },
+        "deployment": {
+          "title": "Deployment & Support",
+          "description": "Launch and provide ongoing support"
+        }
       },
-      process: {
-        title: 'Our Process',
-        discovery: 'Discovery & Planning',
-        design: 'Design & Architecture',
-        implementation: 'Implementation',
-        deployment: 'Deployment & Support',
+      "why": {
+        "title": "Why Choose HikmaNova",
+        "expert": {
+          "title": "Expert Team",
+          "description": "Experienced professionals with proven track records"
+        },
+        "track": {
+          "title": "Proven Track Record",
+          "description": "Successful projects across multiple industries"
+        },
+        "technology": {
+          "title": "Latest Technology",
+          "description": "We use cutting-edge tools and frameworks"
+        },
+        "scalable": {
+          "title": "Scalable Solutions",
+          "description": "Solutions that grow with your business"
+        },
+        "communication": {
+          "title": "Clear Communication",
+          "description": "Transparent and regular updates throughout the project"
+        },
+        "support": {
+          "title": "Ongoing Support",
+          "description": "Dedicated support after project completion"
+        }
       },
-      whyChooseUs: {
-        title: 'Why Choose HikmaNova',
-        expertise: 'Deep Technical Expertise',
-        innovation: 'Innovation-Driven Approach',
-        support: 'Comprehensive Support',
-      },
+      "cta": {
+        "title": "Ready to Transform Your Business?",
+        "subtitle": "Let's discuss how our services can help you achieve your goals",
+        "button": "Get In Touch"
+      }
     },
-
-    // Projects Page
-    projects: {
-      hero: {
-        title: 'Our Projects',
-        subtitle: 'Explore our portfolio of innovative solutions across AI, data, cloud, web, and robotics',
+    "projects": {
+      "hero": {
+        "title": "Our Projects",
+        "subtitle": "Explore our portfolio of innovative solutions across AI, data, cloud, web, and robotics"
       },
-      filterAll: 'All',
-      filterAI: 'AI',
-      filterData: 'Data',
-      filterCloud: 'Cloud',
-      filterWeb: 'Web',
-      filterRobotics: 'Robotics',
-      noProjects: 'No projects found in this category',
-      categories: {
-        ai: 'Artificial Intelligence',
-        data: 'Data Engineering',
-        cloud: 'Cloud Infrastructure',
-        web: 'Web Development',
-        robotics: 'Robotics & IoT',
+      "categories": {
+        "all": "All",
+        "ai": "Artificial Intelligence",
+        "data": "Data Engineering",
+        "cloud": "Cloud Infrastructure",
+        "software": "Software Engineering",
+        "iot": "IoT & IIoT"
       },
+      "noProjects": "No projects found in this category",
+      "stats": {
+        "completed": "Projects Completed",
+        "team": "Team Members",
+        "expertise": "Years of Expertise"
+      },
+      "teamMonitor": {
+        "title": "FIFA Team Monitor",
+        "category": "Artificial Intelligence",
+        "description": "Advanced team analytics and monitoring system for FIFA tournaments"
+      },
+      "nusuk": {
+        "title": "Nusuk Smart Card",
+        "category": "Software Engineering",
+        "description": "Intelligent card system for seamless digital transactions"
+      },
+      "cryptocurrency": {
+        "title": "Cryptocurrency Investment Platform",
+        "category": "Software Engineering",
+        "description": "Secure and user-friendly platform for cryptocurrency trading and investment"
+      },
+      "chatbot": {
+        "title": "Smart Chatbot for Customer Service",
+        "category": "Artificial Intelligence",
+        "description": "AI-powered chatbot providing intelligent customer support and engagement"
+      },
+      "erp": {
+        "title": "Intervention Vouchers ERP System",
+        "category": "Software Engineering",
+        "description": "Comprehensive ERP system for managing intervention vouchers and workflows"
+      },
+      "cybersecurity": {
+        "title": "Cybersecurity Consulting & Audit Services",
+        "category": "Cloud Infrastructure",
+        "description": "Professional security assessment and consulting for enterprise systems"
+      },
+      "technological": {
+        "title": "Technological Dependency Research Series",
+        "category": "Data Engineering",
+        "description": "In-depth research and analysis of technological dependencies and trends"
+      },
+      "neural": {
+        "title": "Neural Vision Platform",
+        "category": "Artificial Intelligence",
+        "description": "Advanced computer vision system for real-time object detection and analysis"
+      },
+      "dataPipeline": {
+        "title": "Data Pipeline Architecture",
+        "category": "Data Engineering",
+        "description": "Scalable data infrastructure processing millions of events per second"
+      },
+      "cloudOptimization": {
+        "title": "Cloud Infrastructure Optimization",
+        "category": "Cloud Infrastructure",
+        "description": "Cost-optimized cloud architecture reducing expenses by 40%"
+      },
+      "robotics": {
+        "title": "Robotics Control System",
+        "category": "IoT & IIoT",
+        "description": "Advanced control system for autonomous robotics and automation"
+      },
+      "ecommerce": {
+        "title": "E-Commerce Platform",
+        "category": "Software Engineering",
+        "description": "Full-featured e-commerce platform with AI-powered recommendations"
+      },
+      "predictive": {
+        "title": "Predictive Analytics Engine",
+        "category": "Data Engineering",
+        "description": "Machine learning engine for predictive analytics and forecasting"
+      },
+      "warehouse": {
+        "title": "Real-time Data Warehouse",
+        "category": "Data Engineering",
+        "description": "High-performance data warehouse for real-time analytics"
+      },
+      "kubernetes": {
+        "title": "Kubernetes Migration",
+        "category": "Cloud Infrastructure",
+        "description": "Enterprise migration to Kubernetes with zero downtime"
+      },
+      "autonomous": {
+        "title": "Autonomous Delivery Robot",
+        "category": "IoT & IIoT",
+        "description": "Autonomous robot system for last-mile delivery logistics"
+      }
     },
-
-    // Project Detail Page
-    projectDetail: {
-      backToProjects: 'Back to Projects',
-      context: 'Context',
-      approach: 'Approach',
-      results: 'Results',
-      relatedProjects: 'Related Projects',
-      technologies: 'Technologies Used',
+    "blog": {
+      "hero": {
+        "title": "Blog",
+        "subtitle": "Insights, tutorials, and best practices on AI, data engineering, and cloud technologies"
+      },
+      "featured": "Featured",
+      "readArticle": "Read Article",
+      "newsletter": {
+        "title": "Subscribe to Our Newsletter",
+        "subtitle": "Get the latest insights delivered to your inbox",
+        "placeholder": "Enter your email",
+        "subscribe": "Subscribe"
+      }
     },
-
-    // Blog Page
-    blog: {
-      hero: {
-        title: 'Blog',
-        subtitle: 'Insights, tutorials, and best practices on AI, data engineering, and cloud technologies',
+    "contact": {
+      "hero": {
+        "title": "Get In Touch",
+        "subtitle": "Have a question or ready to start your next project?"
       },
-      featured: 'Featured',
-      readArticle: 'Read Article',
-      readMore: 'Read More',
-      allPosts: 'All Posts',
-      readTime: {
-        '7min': '7 min read',
-        '8min': '8 min read',
-        '9min': '9 min read',
-        '10min': '10 min read',
-        '11min': '11 min read',
-        '12min': '12 min read',
+      "form": {
+        "title": "Send us a Message",
+        "subtitle": "We'll get back to you as soon as possible",
+        "name": "Name",
+        "namePlaceholder": "Your name",
+        "email": "Email",
+        "emailPlaceholder": "your@email.com",
+        "subject": "Subject",
+        "subjectPlaceholder": "How can we help?",
+        "message": "Message",
+        "messagePlaceholder": "Tell us about your project...",
+        "send": "Send Message",
+        "sending": "Sending..."
       },
-      posts: {
-        aiEnterprise: {
-          title: 'The Future of AI in Enterprise',
-          excerpt: 'Exploring how artificial intelligence is transforming enterprise operations and creating new opportunities for innovation.',
-          content: 'Artificial intelligence is no longer a futuristic concept—it\'s reshaping how enterprises operate today.',
-          category: 'AI',
+      "info": {
+        "phone": {
+          "label": "Phone"
         },
-        dataPipelines: {
-          title: 'Building Scalable Data Pipelines',
-          excerpt: 'Best practices for designing and implementing data pipelines that can handle massive scale while maintaining reliability.',
-          content: 'Scalable data pipelines are the backbone of modern data-driven organizations.',
-          category: 'Data',
+        "email": {
+          "label": "Email"
         },
-        cloudCost: {
-          title: 'Cloud Cost Optimization Strategies',
-          excerpt: 'Practical strategies to reduce your cloud spending without sacrificing performance or reliability.',
-          content: 'Cloud costs can spiral out of control if not managed properly.',
-          category: 'Cloud',
-        },
-        mlProduction: {
-          title: 'Machine Learning in Production',
-          excerpt: 'Challenges and solutions for deploying machine learning models in production environments at scale.',
-          content: 'Deploying machine learning models to production is fundamentally different from building models in notebooks.',
-          category: 'AI',
-        },
-        realtimeAnalytics: {
-          title: 'Real-Time Analytics with Streaming Data',
-          excerpt: 'How to build real-time analytics systems that process streaming data and provide instant insights.',
-          content: 'Real-time analytics has become critical for businesses that need to make decisions based on current data.',
-          category: 'Data',
-        },
-        kubernetes: {
-          title: 'Kubernetes Best Practices',
-          excerpt: 'Essential best practices for running Kubernetes in production and avoiding common pitfalls.',
-          content: 'Kubernetes is powerful but complex. Getting it right requires understanding best practices.',
-          category: 'Cloud',
-        },
+        "location": {
+          "label": "Location",
+          "city": "Riyadh",
+          "country": "Saudi Arabia"
+        }
       },
-      newsletter: {
-        title: 'Subscribe to Our Newsletter',
-        subtitle: 'Get the latest articles, insights, and updates delivered to your inbox',
-        placeholder: 'Enter your email',
-        subscribe: 'Subscribe',
+      "validation": {
+        "name": "Please enter your name",
+        "email": "Please enter a valid email",
+        "subject": "Please enter a subject",
+        "message": "Please enter your message"
       },
+      "success": "Message sent successfully! We'll be in touch soon.",
+      "error": "An error occurred while sending your message.",
+      "errorOccurred": "Please try again.",
+      "faq": {
+        "title": "Frequently Asked Questions"
+      }
     },
-
-    // Blog Post Page
-    blogPost: {
-      backToBlog: 'Back to Blog',
-      publishedOn: 'Published on',
-      readTime: 'min read',
-      relatedPosts: 'Related Posts',
+    "notFound": {
+      "title": "Page Not Found",
+      "subtitle": "Sorry, the page you're looking for doesn't exist.",
+      "backHome": "Back to Home",
+      "suggestions": "Helpful Links"
     },
-
-    // Contact Page
-    contact: {
-      hero: {
-        title: 'Get In Touch',
-        subtitle: 'Have a project in mind? We\'d love to hear from you. Reach out and let\'s discuss how we can help.',
-      },
-      success: 'Message sent successfully! We\'ll get back to you soon.',
-      error: 'Failed to send message. Please try again.',
-      errorOccurred: 'An error occurred. Please try again later.',
-      info: {
-        email: {
-          label: 'Email',
-          value: 'info@hikmanova.com',
-        },
-        phone: {
-          label: 'Phone',
-          value: '+213 553 84 33 33',
-        },
-        location: {
-          label: 'Location',
-          city: 'Riyadh',
-          country: 'Saudi Arabia',
-        },
-      },
-      form: {
-        title: 'Send us a Message',
-        subtitle: 'Fill out the form below and we\'ll get back to you as soon as possible.',
-        name: 'Name',
-        namePlaceholder: 'Your name',
-        email: 'Email',
-        emailPlaceholder: 'your@email.com',
-        subject: 'Subject',
-        subjectPlaceholder: 'Project inquiry',
-        message: 'Message',
-        messagePlaceholder: 'Tell us about your project...',
-        send: 'Send Message',
-        sending: 'Sending...',
-        validation: {
-          name: 'Please enter your name',
-          email: 'Please enter a valid email',
-          subject: 'Please enter a subject',
-          message: 'Please enter a message',
-        },
-        success: 'Message sent successfully! We\'ll get back to you soon.',
-        error: 'Failed to send message. Please try again.',
-        errorOccurred: 'An error occurred. Please try again later.',
-      },
-      faq: {
-        title: 'Frequently Asked Questions',
-        timeline: {
-          q: 'What is your typical project timeline?',
-          a: 'Project timelines vary depending on scope and complexity. Most projects range from 2-6 months. We\'ll provide a detailed timeline during the discovery phase.',
-        },
-        support: {
-          q: 'Do you offer ongoing support?',
-          a: 'Yes, we offer comprehensive support packages including maintenance, monitoring, and optimization. We can discuss your specific needs during consultation.',
-        },
-        technologies: {
-          q: 'What technologies do you specialize in?',
-          a: 'We specialize in AI/ML, data engineering, cloud infrastructure, and full-stack web development. We\'re also flexible and can work with your preferred technologies.',
-        },
-        confidentiality: {
-          q: 'How do you handle confidentiality?',
-          a: 'We take confidentiality seriously and sign NDAs for all projects. Your data and intellectual property are protected.',
-        },
-        pricing: {
-          q: 'What is your pricing model?',
-          a: 'We offer flexible pricing models including fixed-price projects, time-and-materials, and retainer arrangements. We\'ll work with you to find the best fit.',
-        },
-        remote: {
-          q: 'Can you work with remote teams?',
-          a: 'Absolutely! We have experience working with distributed teams across different time zones. We use modern collaboration tools to ensure smooth communication.',
-        },
-      },
+    "footer": {
+      "quickLinks": "Quick Links",
+      "resources": "Resources",
+      "getInTouch": "Get In Touch",
+      "allRightsReserved": "All rights reserved.",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "sitemap": "Sitemap"
     },
-
-    // Managed Services Page
-    managedServices: {
-      hero: {
-        title: 'Managed Services',
-        subtitle: 'Comprehensive outsourcing solutions for your technology needs',
-      },
-      solutions: {
-        title: 'Our Solutions',
-        subtitle: 'Comprehensive solutions for your innovation needs',
-        aiStrategy: {
-          title: 'AI Strategy',
-          description: 'Develop comprehensive AI strategies tailored to your business goals',
-        },
-        mlops: {
-          title: 'MLOps',
-          description: 'Build and deploy machine learning models at scale with confidence',
-        },
-        productPrototyping: {
-          title: 'Product Prototyping',
-          description: 'Rapid prototyping and MVP development for innovative ideas',
-        },
-        iotSolutions: {
-          title: 'IoT Solutions',
-          description: 'Design and deploy end-to-end IoT systems, from device integration to cloud platforms and real-time data visualization',
-        },
-        softwareDevelopment: {
-          title: 'End-to-End Software Development',
-          description: 'Complete software solutions including mobile apps, web applications, backend systems, and cloud infrastructure',
-        },
-        apiTesting: {
-          title: 'API Performance & Stress Testing',
-          description: 'Ensure the reliability, scalability, and robustness of your APIs through professional load, stress, and performance testing',
-        },
-      },
-      skills: {
-        title: 'Our Skills',
-        subtitle: 'Deep expertise across multiple technology domains',
-        backend: 'Backend Development',
-        frontend: 'Frontend Development',
-        mobile: 'Mobile Development',
-        iot: 'IoT & Embedded Engineering',
-        ai: 'Artificial Intelligence / ML',
-        devops: 'DevOps & Cloud Engineering',
-        uiux: 'UI / UX Design',
-      },
-    },
-
-    // 404 Page
-    notFound: {
-      title: 'Page Not Found',
-      subtitle: 'Sorry, the page you\'re looking for doesn\'t exist.',
-      backHome: 'Back to Home',
-      suggestions: 'Helpful Links',
-    },
-
-    // Footer
-    footer: {
-      quickLinks: 'Quick Links',
-      resources: 'Resources',
-      getInTouch: 'Get In Touch',
-      allRightsReserved: 'All rights reserved.',
-      privacy: 'Privacy',
-      terms: 'Terms',
-      sitemap: 'Sitemap',
-    },
-
-    // Common
-    common: {
-      loading: 'Loading...',
-      error: 'An error occurred',
-      tryAgain: 'Try Again',
-      learnMore: 'Learn More',
-      getStarted: 'Get Started',
-      viewDetails: 'View Details',
-      close: 'Close',
-      menu: 'Menu',
-      search: 'Search',
-      noResults: 'No results found',
-    },
+    "common": {
+      "loading": "Loading...",
+      "error": "An error occurred",
+      "tryAgain": "Try Again",
+      "learnMore": "Learn More",
+      "getStarted": "Get Started",
+      "viewDetails": "View Details",
+      "close": "Close",
+      "menu": "Menu",
+      "search": "Search",
+      "noResults": "No results found"
+    }
   },
-
-  ar: {
-    // Navigation
-    nav: {
-      home: 'الرئيسية',
-      about: 'حول',
-      services: 'الخدمات',
-      managedServices: 'الخدمات المدارة',
-      projects: 'المشاريع',
-      blog: 'المدونة',
-      contact: 'اتصل بنا',
-      language: 'اللغة',
+  "ar": {
+    "nav": {
+      "home": "الرئيسية",
+      "about": "حول",
+      "services": "الخدمات",
+      "managedServices": "الخدمات المدارة",
+      "projects": "المشاريع",
+      "blog": "المدونة",
+      "contact": "اتصل بنا",
+      "language": "اللغة"
     },
-
-    // Home Page
-    home: {
-      hero: {
-        title: 'الابتكار من خلال التكنولوجيا',
-        subtitle: 'نحن نبني حلول ذكاء اصطناعي متطورة، منصات بيانات قابلة للتوسع، ومنتجات مبتكرة تحقق تأثيراً حقيقياً على الأعمال.',
-        cta: 'استكشف المشاريع',
-        ctaSecondary: 'تواصل معنا',
+    "home": {
+      "hero": {
+        "title": "الابتكار من خلال التكنولوجيا",
+        "subtitle": "نحن نبني حلول ذكاء اصطناعي متطورة، منصات بيانات قابلة للتوسع، ومنتجات مبتكرة تحقق تأثيراً حقيقياً على الأعمال.",
+        "cta": "استكشف المشاريع",
+        "ctaSecondary": "تواصل معنا"
       },
-      projects: {
-        neuralVision: {
-          title: 'منصة الرؤية العصبية',
-          category: 'الذكاء الاصطناعي',
-          description: 'نظام رؤية حاسوبية متقدم للكشف والتحليل في الوقت الفعلي',
-        },
-        dataPipeline: {
-          title: 'معمارية خط أنابيب البيانات',
-          category: 'البيانات',
-          description: 'بنية تحتية بيانات قابلة للتوسع تعالج ملايين الأحداث في الثانية',
-        },
-        cloudOptimization: {
-          title: 'تحسين البنية التحتية السحابية',
-          category: 'السحابة',
-          description: 'معمارية سحابية محسّنة للتكاليف تقلل النفقات بنسبة 40٪',
-        },
+      "featuredProjects": {
+        "title": "المشاريع المميزة",
+        "subtitle": "عرض أحدث أعمالنا في الذكاء الاصطناعي وهندسة البيانات والبنية التحتية السحابية",
+        "viewAll": "عرض جميع المشاريع"
       },
-      testimonials: {
-        sarah: {
-          name: 'سارة جونسون',
-          role: 'مدير التكنولوجيا، TechCorp',
-          content: 'غيّرت HikmaNova بنيتنا التحتية للبيانات. كانت خبرتهم وتفانيهم حاسمين في نجاحنا.',
-        },
-        marcus: {
-          name: 'ماركوس تشن',
-          role: 'مدير المنتج، InnovateLabs',
-          content: 'كان العمل مع HikmaNova نقطة تحول. قدموا أكثر من التوقعات وقدموا دعماً ممتازاً.',
-        },
-        elena: {
-          name: 'إيلينا رودريغيز',
-          role: 'الرئيس التنفيذي، DataDriven Inc',
-          content: 'أحضر فريق HikmaNova الابتكار والتميز التقني إلى كل جانب من مشروعنا.',
-        },
+      "services": {
+        "title": "خدماتنا",
+        "subtitle": "حلول شاملة لاحتياجات الابتكار الخاصة بك"
       },
-      services: {
-        softwareDevelopment: {
-          title: 'تطوير البرمجيات',
-          description: 'خدمات التطوير الشاملة لتطبيقات الويب والهاتف المحمول والسحابة',
-        },
-        aiStrategy: {
-          title: 'استراتيجية الذكاء الاصطناعي',
-          description: 'استراتيجية وتنفيذ الذكاء الاصطناعي الشامل لتحويل المؤسسات',
-        },
-        productPrototyping: {
-          title: 'نماذج المنتجات الأولية',
-          description: 'تطوير MVP سريع والتحقق من صحة المنتج',
-        },
-        iotSolutions: {
-          title: 'حلول إنترنت الأشياء',
-          description: 'أنظمة إنترنت الأشياء الكاملة من تكامل الأجهزة إلى منصات السحابة',
-        },
+      "howWeWork": {
+        "title": "كيف نعمل",
+        "subtitle": "عملياتنا المثبتة لتقديم حلول مبتكرة",
+        "strategy": {
+          "title": "الاستراتيجية"
+        }
       },
-      howWeWork: {
-        title: 'كيف نعمل',
-        subtitle: 'عملية مثبتة لتقديم حلول مبتكرة',
-        discovery: {
-          title: 'الاكتشاف',
-          desc: 'فهم أهدافك والتحديات',
-        },
-        strategy: {
-          title: 'الاستراتيجية',
-          desc: 'تطوير حلول متوازنة والخارطة الطريقية',
-        },
-        development: {
-          title: 'التطوير',
-          desc: 'البناء باستخدام أحدث التقنيات',
-        },
-        deploy: {
-          title: 'النشر',
-          desc: 'الإطلاق والتحسين للنجاح',
-        },
-      },
-      featuredProjects: {
-        title: 'المشاريع المميزة',
-        subtitle: 'عرض أحدث أعمالنا في الذكاء الاصطناعي وهندسة البيانات والبنية التحتية السحابية',
-        viewAll: 'عرض جميع المشاريع',
-      },
-      cta: {
-        title: 'هل أنت مستعد للابتكار؟',
-        subtitle: 'دعنا نعمل معاً لتحقيق فكرتك الكبيرة التالية',
-        button: 'ابدأ مشروعك',
-      },
+      "cta": {
+        "title": "هل أنت مستعد للابتكار؟",
+        "subtitle": "دعنا نعمل معاً لتحقيق فكرتك الكبيرة التالية",
+        "button": "ابدأ مشروعك"
+      }
     },
-
-    // About Page
-    about: {
-      hero: {
-        title: 'حول HikmaNova',
-        subtitle: 'قيادة الابتكار من خلال التكنولوجيا والخبرة',
+    "about": {
+      "hero": {
+        "title": "حول HikmaNova",
+        "subtitle": "تحفيز الابتكار من خلال التكنولوجيا والخبرة"
       },
-      mission: {
-        title: 'مهمتنا',
-        content: 'تمكين المنظمات بحلول تكنولوجية متطورة تحقق التحول الرقمي وتخلق قيمة عمل دائمة.',
-        description1: 'تأسست HikmaNova برؤية لتحويل الأعمال من خلال حلول تكنولوجية مبتكرة. نعتقد أن التكنولوجيا يجب أن تمكن المنظمات، وليس أن تعقدها.',
-        description2: 'يجمع فريقنا خبراء من مجالات مختلفة لتقديم حلول شاملة تعالج التحديات التجارية الحقيقية. نحن ملتزمون بالتميز والابتكار ونجاح العملاء.',
-        imageAlt: 'فريق HikmaNova',
+      "mission": {
+        "title": "مهمتنا",
+        "description1": "تم تأسيس HikmaNova برؤية لتحويل الأعمال من خلال حلول التكنولوجيا المبتكرة.",
+        "description2": "يجمع فريقنا خبراء من مجالات مختلفة لتقديم حلول شاملة.",
+        "imageAlt": "فريق HikmaNova",
+        "point1": "تقديم حلول مبتكرة تحقق قيمة حقيقية للأعمال",
+        "point2": "بناء شراكات طويلة الأجل مع عملائنا",
+        "point3": "الاستثمار في التعلم المستمر والتقدم التكنولوجي"
       },
-      values: {
-        title: 'قيمنا',
-        innovation: {
-          title: 'الابتكار',
-          description: 'نحن نتبنى التقنيات الجديدة وحل المشاكل الإبداعي',
+      "values": {
+        "title": "قيمنا",
+        "subtitle": "المبادئ التي توجه عملنا",
+        "innovation": {
+          "title": "الابتكار",
+          "description": "نحن نتبنى التقنيات الجديدة وحل المشاكل الإبداعي"
         },
-        ethics: {
-          title: 'الأخلاقيات',
-          description: 'نعمل بنزاهة وشفافية',
+        "ethics": {
+          "title": "الأخلاقيات",
+          "description": "نعمل بنزاهة وشفافية"
         },
-        education: {
-          title: 'التعليم',
-          description: 'نستثمر في مشاركة المعرفة والتعلم المستمر',
-        },
+        "education": {
+          "title": "التعليم",
+          "description": "نستثمر في مشاركة المعرفة والتعلم المستمر"
+        }
       },
-      team: {
-        title: 'فريقنا',
-        subtitle: 'متخصصون خبراء مكرسون لنجاحك',
-      },
-      timeline: {
-        title: 'رحلتنا',
-        founded: {
-          year: '2020',
-          title: 'التأسيس',
-          description: 'تأسست HikmaNova برؤية للابتكار',
+      "team": {
+        "title": "فريقنا",
+        "subtitle": "متخصصون مكرسون لنجاحك",
+        "ibrahim": {
+          "name": "إبراهيم محمد",
+          "role": "المؤسس والرئيس التنفيذي",
+          "bio": "قائد رؤيوي بخبرة تزيد عن 10 سنوات في الذكاء الاصطناعي وتقنيات السحابة"
         },
-        firstProject: {
-          year: '2021',
-          title: 'أول مشروع كبير',
-          description: 'قدمنا أول حل مؤسسي',
+        "hicham": {
+          "name": "هشام بنالي",
+          "role": "مدير التكنولوجيا",
+          "bio": "خبير في هندسة البرمجيات و DevOps مع سجل حافل بالإنجازات"
         },
-        expansion: {
-          year: '2023',
-          title: 'التوسع',
-          description: 'توسيع الخدمات لتشمل الخدمات المدارة',
-        },
-        present: {
-          year: '2024',
-          title: 'الحاضر',
-          description: 'خدمة العملاء عبر صناعات متعددة',
-        },
-      },
+        "ayoub": {
+          "name": "أيوب سعيدي",
+          "role": "مهندس البيانات الرئيسي",
+          "bio": "متخصص في بناء منصات البيانات القابلة للتوسع وحلول التحليلات"
+        }
+      }
     },
-
-    // Services Page
-    services: {
-      hero: {
-        title: 'خدماتنا',
-        subtitle: 'حلول تكنولوجية شاملة مخصصة لاحتياجاتك',
+    "services": {
+      "hero": {
+        "title": "خدماتنا",
+        "subtitle": "حلول تكنولوجية شاملة مصممة خصيصاً لاحتياجاتك"
       },
-      process: {
-        title: 'عملية العمل',
-        subtitle: 'كيف نقدم نتائج استثنائية',
+      "telecom": {
+        "title": "حلول الاتصالات والاتصال",
+        "description": "حلول البنية التحتية للاتصالات المتقدمة",
+        "feature1": "تحسين وإدارة الشبكات",
+        "feature2": "اتصال الجيل الخامس والتقنيات القادمة",
+        "feature3": "المراقبة والدعم في الوقت الفعلي"
       },
-      why: {
-        title: 'لماذا تختار HikmaNova',
+      "prototyping": {
+        "title": "النماذج الأولية السريعة وتطوير MVP",
+        "description": "تسريع أفكارك من المفهوم إلى المنتجات الجاهزة للسوق",
+        "feature1": "منهجية التطوير الرشيقة",
+        "feature2": "نهج التصميم الموجه للمستخدم",
+        "feature3": "حلقات التكرار والتغذية الراجعة السريعة",
+        "feature4": "جودة الكود الجاهز للإنتاج"
       },
-      aiStrategy: {
-        title: 'استراتيجية الذكاء الاصطناعي',
-        description: 'تطوير استراتيجيات ذكاء اصطناعي شاملة مخصصة لأهداف عملك',
+      "iot": {
+        "title": "إنترنت الأشياء والأنظمة المدمجة",
+        "description": "حلول إنترنت الأشياء الشاملة من تكامل الأجهزة إلى منصات السحابة",
+        "feature1": "تكامل وإدارة الأجهزة",
+        "feature2": "جمع وتحليل البيانات في الوقت الفعلي",
+        "feature3": "البنية التحتية السحابية القابلة للتوسع",
+        "feature4": "التحليلات والتصور المتقدم"
       },
-      mlops: {
-        title: 'MLOps',
-        description: 'بناء ونشر نماذج التعلم الآلي على نطاق واسع بثقة',
+      "aiStrategy": {
+        "title": "استراتيجية الذكاء الاصطناعي والتنفيذ",
+        "description": "تطوير استراتيجيات ذكاء اصطناعي شاملة مصممة خصيصاً لأهدافك التجارية",
+        "feature1": "تقييم جاهزية الذكاء الاصطناعي",
+        "feature2": "تطوير نماذج مخصصة",
+        "feature3": "نشر الذكاء الاصطناعي للمؤسسات",
+        "feature4": "التحسين المستمر"
       },
-      dataPlatforms: {
-        title: 'منصات البيانات',
-        description: 'إنشاء بنية تحتية بيانات قابلة للتوسع للتحليلات والرؤى',
+      "devops": {
+        "title": "DevOps وهندسة السحابة",
+        "description": "ممارسات DevOps الحديثة وإدارة البنية التحتية السحابية",
+        "feature1": "أتمتة خطوط أنابيب CI/CD",
+        "feature2": "البنية التحتية كرمز",
+        "feature3": "الحاويات والتنسيق",
+        "feature4": "المراقبة والملاحظة",
+        "feature5": "تحسين التكاليف"
       },
-      cloudPrototyping: {
-        title: 'السحابة وتطوير النماذج الأولية',
-        description: 'تطوير سريع للنماذج الأولية وتطوير الحد الأدنى من المنتجات',
+      "workforce": {
+        "title": "تعزيز القوى العاملة",
+        "description": "مواهب تقنية ماهرة لتعزيز فريقك",
+        "feature1": "مطورون ومهندسون خبراء",
+        "feature2": "نماذج الانخراط المرنة",
+        "feature3": "عملية الإعداد السريعة",
+        "feature4": "ضمان الجودة والدعم",
+        "feature5": "التكامل السلس للفريق"
       },
-      iotSolutions: {
-        title: 'حلول إنترنت الأشياء',
-        description: 'تصميم ونشر أنظمة إنترنت الأشياء الشاملة مع التصور في الوقت الفعلي',
+      "analytics": {
+        "title": "تحليل البيانات والذكاء التجاري",
+        "description": "تحويل بيانات مشروعك إلى رؤى تجارية قابلة للتنفيذ",
+        "feature1": "تصميم مستودع البيانات",
+        "feature2": "لوحات المعلومات التحليلية المتقدمة",
+        "feature3": "النمذجة التنبؤية",
+        "feature4": "التقارير في الوقت الفعلي"
       },
-      softwareDevelopment: {
-        title: 'تطوير البرمجيات الشامل',
-        description: 'حلول برمجية كاملة تشمل الهاتف المحمول والويب والبنية التحتية السحابية',
+      "security": {
+        "title": "الأمن السيبراني والامتثال",
+        "description": "حماية أصولك بحلول أمان شاملة",
+        "feature1": "تدقيق وتقييم الأمان",
+        "feature2": "إدارة الامتثال",
+        "feature3": "كشف التهديدات والاستجابة",
+        "feature4": "تدريب الوعي الأمني"
       },
-      apiTesting: {
-        title: 'اختبار أداء واختبار الضغط للواجهات البرمجية',
-        description: 'ضمان الموثوقية والقابلية للتوسع لواجهاتك البرمجية من خلال الاختبار المهني',
+      "process": {
+        "title": "عملياتنا",
+        "subtitle": "كيف نقدم نتائج استثنائية",
+        "discovery": {
+          "title": "الاكتشاف والتخطيط",
+          "description": "فهم متطلباتك وتحديد خريطة الطريق"
+        },
+        "strategy": {
+          "title": "الاستراتيجية والتصميم",
+          "description": "تطوير استراتيجية شاملة وتصميم تقني"
+        },
+        "design": {
+          "title": "التصميم والهندسة المعمارية",
+          "description": "إنشاء هندسة معمارية قابلة للتوسع وقوية"
+        },
+        "implementation": {
+          "title": "التنفيذ",
+          "description": "بناء ونشر حلك"
+        },
+        "testing": {
+          "title": "الاختبار وضمان الجودة",
+          "description": "اختبار شامل وضمان الجودة"
+        },
+        "deployment": {
+          "title": "النشر والدعم",
+          "description": "الإطلاق والدعم المستمر"
+        }
       },
-      process: {
-        title: 'عملية العمل',
-        discovery: 'الاكتشاف والتخطيط',
-        design: 'التصميم والمعمارية',
-        implementation: 'التنفيذ',
-        deployment: 'النشر والدعم',
+      "why": {
+        "title": "لماذا تختار HikmaNova",
+        "expert": {
+          "title": "فريق خبير",
+          "description": "متخصصون ذوو خبرة مع سجلات حافلة"
+        },
+        "track": {
+          "title": "سجل حافل بالإنجازات",
+          "description": "مشاريع ناجحة عبر صناعات متعددة"
+        },
+        "technology": {
+          "title": "أحدث التكنولوجيا",
+          "description": "نستخدم أحدث الأدوات والأطر"
+        },
+        "scalable": {
+          "title": "حلول قابلة للتوسع",
+          "description": "حلول تنمو مع عملك"
+        },
+        "communication": {
+          "title": "التواصل الواضح",
+          "description": "تحديثات شفافة ومنتظمة طوال المشروع"
+        },
+        "support": {
+          "title": "الدعم المستمر",
+          "description": "دعم مخصص بعد اكتمال المشروع"
+        }
       },
-      whyChooseUs: {
-        title: 'لماذا تختار HikmaNova',
-        expertise: 'خبرة تقنية عميقة',
-        innovation: 'نهج مدفوع بالابتكار',
-        support: 'دعم شامل',
-      },
+      "cta": {
+        "title": "هل أنت مستعد لتحويل عملك؟",
+        "subtitle": "دعنا نناقش كيف يمكن لخدماتنا مساعدتك في تحقيق أهدافك",
+        "button": "تواصل معنا"
+      }
     },
-
-    // Projects Page
-    projects: {
-      hero: {
-        title: 'مشاريعنا',
-        subtitle: 'استكشف محفظتنا من الحلول المبتكرة عبر الذكاء الاصطناعي والبيانات والسحابة والويب والروبوتات',
+    "projects": {
+      "hero": {
+        "title": "مشاريعنا",
+        "subtitle": "استكشف محفظتنا من الحلول المبتكرة عبر الذكاء الاصطناعي والبيانات والسحابة والويب والروبوتات"
       },
-      filterAll: 'الكل',
-      filterAI: 'الذكاء الاصطناعي',
-      filterData: 'البيانات',
-      filterCloud: 'السحابة',
-      filterWeb: 'الويب',
-      filterRobotics: 'الروبوتات',
-      noProjects: 'لم يتم العثور على مشاريع في هذه الفئة',
-      categories: {
-        ai: 'الذكاء الاصطناعي',
-        data: 'هندسة البيانات',
-        cloud: 'البنية التحتية السحابية',
-        web: 'تطوير الويب',
-        robotics: 'الروبوتات وإنترنت الأشياء',
+      "categories": {
+        "all": "الكل",
+        "ai": "الذكاء الاصطناعي",
+        "data": "هندسة البيانات",
+        "cloud": "البنية التحتية السحابية",
+        "software": "هندسة البرمجيات",
+        "iot": "إنترنت الأشياء"
       },
+      "noProjects": "لم يتم العثور على مشاريع في هذه الفئة",
+      "stats": {
+        "completed": "المشاريع المكتملة",
+        "team": "أعضاء الفريق",
+        "expertise": "سنوات الخبرة"
+      },
+      "teamMonitor": {
+        "title": "نظام مراقبة فريق FIFA",
+        "category": "الذكاء الاصطناعي",
+        "description": "نظام تحليلات ومراقبة فريق متقدم لبطولات FIFA"
+      },
+      "nusuk": {
+        "title": "بطاقة Nusuk الذكية",
+        "category": "هندسة البرمجيات",
+        "description": "نظام بطاقة ذكي للمعاملات الرقمية السلسة"
+      },
+      "cryptocurrency": {
+        "title": "منصة استثمار العملات الرقمية",
+        "category": "هندسة البرمجيات",
+        "description": "منصة آمنة وسهلة الاستخدام لتداول واستثمار العملات الرقمية"
+      },
+      "chatbot": {
+        "title": "روبوت محادثة ذكي لخدمة العملاء",
+        "category": "الذكاء الاصطناعي",
+        "description": "روبوت محادثة مدعوم بالذكاء الاصطناعي يوفر دعم عملاء ذكي"
+      },
+      "erp": {
+        "title": "نظام ERP لقسائم التدخل",
+        "category": "هندسة البرمجيات",
+        "description": "نظام ERP شامل لإدارة قسائم التدخل وسير العمل"
+      },
+      "cybersecurity": {
+        "title": "خدمات الاستشارات الأمنية والتدقيق",
+        "category": "البنية التحتية السحابية",
+        "description": "تقييم أمان احترافي واستشارات للأنظمة الموجهة للمؤسسات"
+      },
+      "technological": {
+        "title": "سلسلة أبحاث الاعتماد التكنولوجي",
+        "category": "هندسة البيانات",
+        "description": "بحث وتحليل متعمق للاعتماديات التكنولوجية والاتجاهات"
+      },
+      "neural": {
+        "title": "منصة الرؤية العصبية",
+        "category": "الذكاء الاصطناعي",
+        "description": "نظام رؤية حاسوبية متقدم للكشف والتحليل في الوقت الفعلي"
+      },
+      "dataPipeline": {
+        "title": "هندسة خط أنابيب البيانات",
+        "category": "هندسة البيانات",
+        "description": "بنية تحتية بيانات قابلة للتوسع تعالج ملايين الأحداث في الثانية"
+      },
+      "cloudOptimization": {
+        "title": "تحسين البنية التحتية السحابية",
+        "category": "البنية التحتية السحابية",
+        "description": "هندسة معمارية سحابية محسنة من حيث التكلفة تقلل النفقات بنسبة 40٪"
+      },
+      "robotics": {
+        "title": "نظام التحكم في الروبوتات",
+        "category": "إنترنت الأشياء",
+        "description": "نظام تحكم متقدم للروبوتات المستقلة والأتمتة"
+      },
+      "ecommerce": {
+        "title": "منصة التجارة الإلكترونية",
+        "category": "هندسة البرمجيات",
+        "description": "منصة تجارة إلكترونية كاملة مع توصيات مدعومة بالذكاء الاصطناعي"
+      },
+      "predictive": {
+        "title": "محرك التحليلات التنبؤية",
+        "category": "هندسة البيانات",
+        "description": "محرك التعلم الآلي للتحليلات التنبؤية والتنبؤ"
+      },
+      "warehouse": {
+        "title": "مستودع البيانات في الوقت الفعلي",
+        "category": "هندسة البيانات",
+        "description": "مستودع بيانات عالي الأداء للتحليلات في الوقت الفعلي"
+      },
+      "kubernetes": {
+        "title": "ترحيل Kubernetes",
+        "category": "البنية التحتية السحابية",
+        "description": "ترحيل المؤسسات إلى Kubernetes بدون توقف"
+      },
+      "autonomous": {
+        "title": "روبوت التوصيل المستقل",
+        "category": "إنترنت الأشياء",
+        "description": "نظام روبوت مستقل لخدمات التوصيل في الميل الأخير"
+      }
     },
-
-    // Project Detail Page
-    projectDetail: {
-      backToProjects: 'العودة إلى المشاريع',
-      context: 'السياق',
-      approach: 'النهج',
-      results: 'النتائج',
-      relatedProjects: 'المشاريع ذات الصلة',
-      technologies: 'التقنيات المستخدمة',
+    "blog": {
+      "hero": {
+        "title": "المدونة",
+        "subtitle": "رؤى وبرامج تعليمية وأفضل الممارسات في الذكاء الاصطناعي وهندسة البيانات وتقنيات السحابة"
+      },
+      "featured": "مميز",
+      "readArticle": "اقرأ المقالة",
+      "newsletter": {
+        "title": "اشترك في نشرتنا الإخبارية",
+        "subtitle": "احصل على أحدث الرؤى في بريدك الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني",
+        "subscribe": "اشترك"
+      }
     },
-
-    // Blog Page
-    blog: {
-      hero: {
-        title: 'المدونة',
-        subtitle: 'رؤى وتحديثات حول التكنولوجيا والابتكار واتجاهات الصناعة',
+    "contact": {
+      "hero": {
+        "title": "تواصل معنا",
+        "subtitle": "هل لديك سؤال أم أنت مستعد لبدء مشروعك التالي؟"
       },
-      featured: 'مميز',
-      readArticle: 'اقرأ المقالة',
-      readMore: 'اقرأ المزيد',
-      allPosts: 'جميع المنشورات',
-      readTime: {
-        '7min': '7 دقائق قراءة',
-        '8min': '8 دقائق قراءة',
-        '9min': '9 دقائق قراءة',
-        '10min': '10 دقائق قراءة',
-        '11min': '11 دقيقة قراءة',
-        '12min': '12 دقيقة قراءة',
+      "form": {
+        "title": "أرسل لنا رسالة",
+        "subtitle": "سنرد عليك في أقرب وقت ممكن",
+        "name": "الاسم",
+        "namePlaceholder": "اسمك",
+        "email": "البريد الإلكتروني",
+        "emailPlaceholder": "your@email.com",
+        "subject": "الموضوع",
+        "subjectPlaceholder": "كيف يمكننا مساعدتك؟",
+        "message": "الرسالة",
+        "messagePlaceholder": "أخبرنا عن مشروعك...",
+        "send": "إرسال الرسالة",
+        "sending": "جاري الإرسال..."
       },
-      posts: {
-        aiEnterprise: {
-          title: 'مستقبل الذكاء الاصطناعي في المؤسسات',
-          excerpt: 'استكشاف كيفية تحويل الذكاء الاصطناعي لعمليات المؤسسات وخلق فرص ابتكار جديدة.',
-          content: 'لم يعد الذكاء الاصطناعي مفهوماً مستقبلياً، بل يعيد تشكيل طريقة عمل المؤسسات اليوم.',
-          category: 'الذكاء الاصطناعي',
+      "info": {
+        "phone": {
+          "label": "الهاتف"
         },
-        dataPipelines: {
-          title: 'بناء خطوط أنابيب البيانات القابلة للتوسع',
-          excerpt: 'أفضل الممارسات لتصميم وتنفيذ خطوط أنابيب البيانات التي يمكنها التعامل مع الحجم الضخم مع الحفاظ على الموثوقية.',
-          content: 'خطوط أنابيب البيانات القابلة للتوسع هي العمود الفقري للمنظمات الحديثة المدفوعة بالبيانات.',
-          category: 'البيانات',
+        "email": {
+          "label": "البريد الإلكتروني"
         },
-        cloudCost: {
-          title: 'استراتيجيات تحسين تكاليف السحابة',
-          excerpt: 'استراتيجيات عملية لتقليل نفقات السحابة دون التضحية بالأداء أو الموثوقية.',
-          content: 'يمكن أن تخرج تكاليف السحابة عن السيطرة إذا لم تتم إدارتها بشكل صحيح.',
-          category: 'السحابة',
-        },
-        mlProduction: {
-          title: 'التعلم الآلي في الإنتاج',
-          excerpt: 'التحديات والحلول لنشر نماذج التعلم الآلي في بيئات الإنتاج على نطاق واسع.',
-          content: 'نشر نماذج التعلم الآلي في الإنتاج مختلف بشكل أساسي عن بناء النماذج في دفاتر الملاحظات.',
-          category: 'الذكاء الاصطناعي',
-        },
-        realtimeAnalytics: {
-          title: 'التحليلات في الوقت الفعلي مع بيانات البث',
-          excerpt: 'كيفية بناء أنظمة تحليلات في الوقت الفعلي تعالج بيانات البث وتوفر رؤى فورية.',
-          content: 'أصبحت التحليلات في الوقت الفعلي حاسمة للشركات التي تحتاج إلى اتخاذ قرارات بناءً على البيانات الحالية.',
-          category: 'البيانات',
-        },
-        kubernetes: {
-          title: 'أفضل ممارسات Kubernetes',
-          excerpt: 'أفضل الممارسات الأساسية لتشغيل Kubernetes في الإنتاج وتجنب المزالق الشائعة.',
-          content: 'Kubernetes قوي لكنه معقد. الحصول عليه بشكل صحيح يتطلب فهم أفضل الممارسات.',
-          category: 'السحابة',
-        },
+        "location": {
+          "label": "الموقع",
+          "city": "الرياض",
+          "country": "المملكة العربية السعودية"
+        }
       },
-      newsletter: {
-        title: 'اشترك في نشرتنا الإخبارية',
-        subtitle: 'احصل على أحدث المقالات والرؤى والتحديثات في بريدك الإلكتروني',
-        placeholder: 'أدخل بريدك الإلكتروني',
-        subscribe: 'اشترك',
+      "validation": {
+        "name": "يرجى إدخال اسمك",
+        "email": "يرجى إدخال بريد إلكتروني صحيح",
+        "subject": "يرجى إدخال الموضوع",
+        "message": "يرجى إدخال رسالتك"
       },
+      "success": "تم إرسال الرسالة بنجاح! سنتواصل معك قريباً.",
+      "error": "حدث خطأ أثناء إرسال رسالتك.",
+      "errorOccurred": "يرجى المحاولة مرة أخرى.",
+      "faq": {
+        "title": "الأسئلة الشائعة"
+      }
     },
-
-    // Blog Post Page
-    blogPost: {
-      backToBlog: 'العودة إلى المدونة',
-      publishedOn: 'نُشر في',
-      readTime: 'دقيقة قراءة',
-      relatedPosts: 'منشورات ذات صلة',
+    "notFound": {
+      "title": "الصفحة غير موجودة",
+      "subtitle": "عذراً، الصفحة التي تبحث عنها غير موجودة.",
+      "backHome": "العودة إلى الرئيسية",
+      "suggestions": "روابط مفيدة"
     },
-
-    // Contact Page
-    contact: {
-      hero: {
-        title: 'تواصل معنا',
-        subtitle: 'هل لديك مشروع في الذهن؟ نود أن نسمع منك. تواصل معنا ودعنا نناقش كيف يمكننا مساعدتك.',
-      },
-      success: 'تم إرسال الرسالة بنجاح! سنعود إليك قريباً.',
-      error: 'فشل إرسال الرسالة. يرجى المحاولة مرة أخرى.',
-      errorOccurred: 'حدث خطأ. يرجى المحاولة لاحقاً.',
-      info: {
-        email: {
-          label: 'البريد الإلكتروني',
-          value: 'info@hikmanova.com',
-        },
-        phone: {
-          label: 'الهاتف',
-          value: '+213 553 84 33 33',
-        },
-        location: {
-          label: 'الموقع',
-          city: 'الرياض',
-          country: 'المملكة العربية السعودية',
-        },
-      },
-      form: {
-        title: 'أرسل لنا رسالة',
-        subtitle: 'أكمل النموذج أدناه وسنعود إليك في أقرب وقت ممكن.',
-        name: 'الاسم',
-        namePlaceholder: 'اسمك',
-        email: 'البريد الإلكتروني',
-        emailPlaceholder: 'بريدك@email.com',
-        subject: 'الموضوع',
-        subjectPlaceholder: 'استفسار عن مشروع',
-        message: 'الرسالة',
-        messagePlaceholder: 'أخبرنا عن مشروعك...',
-        send: 'إرسال الرسالة',
-        sending: 'جاري الإرسال...',
-        validation: {
-          name: 'يرجى إدخال اسمك',
-          email: 'يرجى إدخال بريد إلكتروني صحيح',
-          subject: 'يرجى إدخال موضوع',
-          message: 'يرجى إدخال رسالة',
-        },
-        success: 'تم إرسال الرسالة بنجاح! سنعود إليك قريباً.',
-        error: 'فشل إرسال الرسالة. يرجى المحاولة مرة أخرى.',
-        errorOccurred: 'حدث خطأ. يرجى المحاولة لاحقاً.',
-      },
-      faq: {
-        title: 'الأسئلة الشائعة',
-        timeline: {
-          q: 'ما هو الجدول الزمني النموذجي للمشروع؟',
-          a: 'تختلف جداول المشاريع حسب النطاق والتعقيد. تتراوح معظم المشاريع بين شهرين إلى ستة أشهر. سنوفر جدولاً زمنياً مفصلاً خلال مرحلة الاكتشاف.',
-        },
-        support: {
-          q: 'هل تقدمون دعماً مستمراً؟',
-          a: 'نعم، نقدم حزم دعم شاملة تشمل الصيانة والمراقبة والتحسين. يمكننا مناقشة احتياجاتك المحددة أثناء الاستشارة.',
-        },
-        technologies: {
-          q: 'ما هي التقنيات التي تتخصصون فيها؟',
-          a: 'نتخصص في الذكاء الاصطناعي/التعلم الآلي وهندسة البيانات والبنية التحتية السحابية وتطوير الويب الشامل. نحن مرنون أيضاً ويمكننا العمل مع التقنيات المفضلة لديك.',
-        },
-        confidentiality: {
-          q: 'كيف تتعاملون مع السرية؟',
-          a: 'نأخذ السرية على محمل الجد ونوقع اتفاقيات عدم الإفصاح لجميع المشاريع. بيانات وملكيتك الفكرية محمية.',
-        },
-        pricing: {
-          q: 'ما هو نموذج التسعير الخاص بك؟',
-          a: 'نقدم نماذج تسعير مرنة تشمل المشاريع بسعر ثابت والوقت والمواد والترتيبات الدورية. سنعمل معك لإيجاد الخيار الأفضل.',
-        },
-        remote: {
-          q: 'هل يمكنك العمل مع الفرق البعيدة؟',
-          a: 'بالتأكيد! لدينا خبرة في العمل مع الفرق الموزعة عبر مناطق زمنية مختلفة. نستخدم أدوات تعاون حديثة لضمان التواصل السلس.',
-        },
-      },
+    "footer": {
+      "quickLinks": "روابط سريعة",
+      "resources": "الموارد",
+      "getInTouch": "تواصل معنا",
+      "allRightsReserved": "جميع الحقوق محفوظة.",
+      "privacy": "الخصوصية",
+      "terms": "الشروط",
+      "sitemap": "خريطة الموقع"
     },
-
-    // Managed Services Page
-    managedServices: {
-      hero: {
-        title: 'الخدمات المدارة',
-        subtitle: 'حلول الاستعانة بمصادر خارجية الشاملة لاحتياجات التكنولوجيا الخاصة بك',
-      },
-      solutions: {
-        title: 'حلولنا',
-        subtitle: 'حلول شاملة لاحتياجات الابتكار الخاصة بك',
-        aiStrategy: {
-          title: 'استراتيجية الذكاء الاصطناعي',
-          description: 'تطوير استراتيجيات ذكاء اصطناعي شاملة مخصصة لأهداف عملك',
-        },
-        mlops: {
-          title: 'MLOps',
-          description: 'بناء ونشر نماذج التعلم الآلي على نطاق واسع بثقة',
-        },
-        productPrototyping: {
-          title: 'نماذج المنتجات الأولية',
-          description: 'تطوير سريع للنماذج الأولية وتطوير الحد الأدنى من المنتجات',
-        },
-        iotSolutions: {
-          title: 'حلول إنترنت الأشياء',
-          description: 'تصميم ونشر أنظمة إنترنت الأشياء الشاملة، من تكامل الأجهزة إلى منصات السحابة والتصور في الوقت الفعلي',
-        },
-        softwareDevelopment: {
-          title: 'تطوير البرمجيات الشامل',
-          description: 'حلول برمجية كاملة تشمل تطبيقات الهاتف المحمول وتطبيقات الويب والأنظمة الخلفية والبنية التحتية السحابية',
-        },
-        apiTesting: {
-          title: 'اختبار أداء واختبار الضغط للواجهات البرمجية',
-          description: 'ضمان الموثوقية والقابلية للتوسع والقوة لواجهاتك البرمجية من خلال اختبار الحمل والضغط والأداء المهني',
-        },
-      },
-      skills: {
-        title: 'مهاراتنا',
-        subtitle: 'خبرة عميقة عبر مجالات التكنولوجيا المتعددة',
-        backend: 'تطوير الواجهة الخلفية',
-        frontend: 'تطوير الواجهة الأمامية',
-        mobile: 'تطوير الهاتف المحمول',
-        iot: 'هندسة إنترنت الأشياء والأنظمة المدمجة',
-        ai: 'الذكاء الاصطناعي والتعلم الآلي',
-        devops: 'DevOps وهندسة السحابة',
-        uiux: 'تصميم واجهة المستخدم وتجربة المستخدم',
-      },
-    },
-
-    // 404 Page
-    notFound: {
-      title: 'الصفحة غير موجودة',
-      subtitle: 'عذراً، الصفحة التي تبحث عنها غير موجودة.',
-      backHome: 'العودة إلى الرئيسية',
-      suggestions: 'روابط مفيدة',
-    },
-
-    // Footer
-    footer: {
-      quickLinks: 'روابط سريعة',
-      resources: 'الموارد',
-      getInTouch: 'تواصل معنا',
-      allRightsReserved: 'جميع الحقوق محفوظة.',
-      privacy: 'الخصوصية',
-      terms: 'الشروط',
-      sitemap: 'خريطة الموقع',
-    },
-
-    // Common
-    common: {
-      loading: 'جاري التحميل...',
-      error: 'حدث خطأ',
-      tryAgain: 'حاول مرة أخرى',
-      learnMore: 'تعرف على المزيد',
-      getStarted: 'ابدأ الآن',
-      viewDetails: 'عرض التفاصيل',
-      close: 'إغلاق',
-      menu: 'القائمة',
-      search: 'بحث',
-      noResults: 'لم يتم العثور على نتائج',
-    },
-  },
+    "common": {
+      "loading": "جاري التحميل...",
+      "error": "حدث خطأ",
+      "tryAgain": "حاول مرة أخرى",
+      "learnMore": "تعرف على المزيد",
+      "getStarted": "ابدأ الآن",
+      "viewDetails": "عرض التفاصيل",
+      "close": "إغلاق",
+      "menu": "القائمة",
+      "search": "بحث",
+      "noResults": "لم يتم العثور على نتائج"
+    }
+  }
 };
 
 export function getTranslation(language: 'en' | 'ar', path: string): string {
