@@ -22,21 +22,84 @@ export const translations = {
         "subtitle": "Showcasing our latest work in AI, data engineering, and cloud infrastructure",
         "viewAll": "View All Projects"
       },
+      "projects": {
+        "neuralVision": {
+          "title": "Neural Vision Platform",
+          "category": "AI",
+          "description": "Advanced computer vision system for real-time object detection and analysis"
+        },
+        "dataPipeline": {
+          "title": "Data Pipeline Architecture",
+          "category": "Data",
+          "description": "Scalable data infrastructure processing millions of events per second"
+        },
+        "cloudOptimization": {
+          "title": "Cloud Infrastructure Optimization",
+          "category": "Cloud",
+          "description": "Cost-optimized cloud architecture reducing expenses by 40%"
+        }
+      },
       "services": {
         "title": "Our Services",
-        "subtitle": "Comprehensive solutions for your innovation needs"
+        "subtitle": "Comprehensive solutions for your innovation needs",
+        "softwareDevelopment": {
+          "title": "Software Development",
+          "description": "End-to-end development services for web, mobile, and cloud applications"
+        },
+        "aiStrategy": {
+          "title": "AI Strategy",
+          "description": "Comprehensive AI strategy and implementation for enterprise transformation"
+        },
+        "productPrototyping": {
+          "title": "Product Prototyping",
+          "description": "Rapid MVP development and product validation"
+        },
+        "iotSolutions": {
+          "title": "IoT Solutions",
+          "description": "Complete IoT systems from device integration to cloud platforms"
+        }
       },
       "howWeWork": {
         "title": "How We Work",
         "subtitle": "Our proven process for delivering innovative solutions",
+        "discovery": {
+          "title": "Discovery",
+          "desc": "Understand your goals and challenges"
+        },
         "strategy": {
-          "title": "Strategy"
+          "title": "Strategy",
+          "desc": "Develop balanced solutions and roadmaps"
+        },
+        "development": {
+          "title": "Development",
+          "desc": "Build with cutting-edge technologies"
+        },
+        "deploy": {
+          "title": "Deploy",
+          "desc": "Launch and optimize for success"
         }
       },
       "cta": {
         "title": "Ready to Innovate?",
         "subtitle": "Let's work together to bring your next big idea to life",
         "button": "Start Your Project"
+      },
+      "testimonials": {
+        "sarah": {
+          "name": "Sarah Johnson",
+          "role": "CTO, TechCorp",
+          "content": "HikmaNova transformed our data infrastructure. Their expertise and dedication were instrumental in our success."
+        },
+        "marcus": {
+          "name": "Marcus Chen",
+          "role": "Product Director, InnovateLabs",
+          "content": "Working with HikmaNova was a game-changer. They delivered beyond expectations and provided excellent support."
+        },
+        "elena": {
+          "name": "Elena Rodriguez",
+          "role": "CEO, DataDriven Inc",
+          "content": "The team at HikmaNova brought innovation and technical excellence to every aspect of our project."
+        }
       }
     },
     "about": {
@@ -430,21 +493,84 @@ export const translations = {
         "subtitle": "عرض أحدث أعمالنا في الذكاء الاصطناعي وهندسة البيانات والبنية التحتية السحابية",
         "viewAll": "عرض جميع المشاريع"
       },
+      "projects": {
+        "neuralVision": {
+          "title": "منصة الرؤية العصبية",
+          "category": "الذكاء الاصطناعي",
+          "description": "نظام رؤية حاسوبية متقدم للكشف والتحليل في الوقت الفعلي"
+        },
+        "dataPipeline": {
+          "title": "هندسة خط أنابيب البيانات",
+          "category": "هندسة البيانات",
+          "description": "بنية تحتية بيانات قابلة للتوسع تعالج ملايين الأحداث في الثانية"
+        },
+        "cloudOptimization": {
+          "title": "تحسين البنية التحتية السحابية",
+          "category": "البنية التحتية السحابية",
+          "description": "هندسة معمارية سحابية محسنة من حيث التكلفة تقلل النفقات بنسبة 40٪"
+        }
+      },
       "services": {
         "title": "خدماتنا",
-        "subtitle": "حلول شاملة لاحتياجات الابتكار الخاصة بك"
+        "subtitle": "حلول شاملة لاحتياجات الابتكار الخاصة بك",
+        "softwareDevelopment": {
+          "title": "تطوير البرمجيات",
+          "description": "خدمات التطوير الشاملة لتطبيقات الويب والهاتف المحمول والسحابة"
+        },
+        "aiStrategy": {
+          "title": "استراتيجية الذكاء الاصطناعي",
+          "description": "استراتيجية وتنفيذ شامل للذكاء الاصطناعي لتحول المؤسسات"
+        },
+        "productPrototyping": {
+          "title": "النماذج الأولية للمنتجات",
+          "description": "تطوير سريع لـ MVP والتحقق من صحة المنتج"
+        },
+        "iotSolutions": {
+          "title": "حلول إنترنت الأشياء",
+          "description": "أنظمة إنترنت الأشياء الكاملة من تكامل الأجهزة إلى منصات السحابة"
+        }
       },
       "howWeWork": {
         "title": "كيف نعمل",
         "subtitle": "عملياتنا المثبتة لتقديم حلول مبتكرة",
+        "discovery": {
+          "title": "الاكتشاف",
+          "desc": "فهم أهدافك والتحديات التي تواجهها"
+        },
         "strategy": {
-          "title": "الاستراتيجية"
+          "title": "الاستراتيجية",
+          "desc": "تطوير حلول متوازنة وخرائط طريق"
+        },
+        "development": {
+          "title": "التطوير",
+          "desc": "البناء باستخدام أحدث التقنيات"
+        },
+        "deploy": {
+          "title": "النشر",
+          "desc": "الإطلاق والتحسين للنجاح"
         }
       },
       "cta": {
         "title": "هل أنت مستعد للابتكار؟",
         "subtitle": "دعنا نعمل معاً لتحقيق فكرتك الكبيرة التالية",
         "button": "ابدأ مشروعك"
+      },
+      "testimonials": {
+        "sarah": {
+          "name": "سارة جونسون",
+          "role": "CTO، TechCorp",
+          "content": "حولت HikmaNova البنية التحتية للبيانات لدينا. كانت خبرتهم وتفانيهم أساسيين لنجاحنا."
+        },
+        "marcus": {
+          "name": "ماركوس تشن",
+          "role": "مدير المنتج، InnovateLabs",
+          "content": "العمل مع HikmaNova كان تغييراً جذرياً. لقد تجاوزوا التوقعات وقدموا دعماً ممتازاً."
+        },
+        "elena": {
+          "name": "إيلينا رودريجيز",
+          "role": "الرئيس التنفيذي، DataDriven Inc",
+          "content": "جلب فريق HikmaNova الابتكار والتميز التقني إلى كل جوانب مشروعنا."
+        }
       }
     },
     "about": {
