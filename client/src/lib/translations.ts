@@ -390,6 +390,52 @@ export const translations = {
       },
       "featured": "Featured",
       "readArticle": "Read Article",
+      "readTime": {
+        "7min": "7 min read",
+        "8min": "8 min read",
+        "9min": "9 min read",
+        "10min": "10 min read",
+        "11min": "11 min read",
+        "12min": "12 min read"
+      },
+      "posts": {
+        "aiEnterprise": {
+          "title": "The Future of AI in Enterprise",
+          "excerpt": "Exploring how artificial intelligence is transforming enterprise operations and creating new opportunities for innovation.",
+          "content": "Artificial intelligence is no longer a futuristic concept—it's reshaping how enterprises operate today.",
+          "category": "AI"
+        },
+        "dataPipelines": {
+          "title": "Building Scalable Data Pipelines",
+          "excerpt": "Best practices for designing and implementing data pipelines that can handle massive scale while maintaining reliability.",
+          "content": "Scalable data pipelines are the backbone of modern data-driven organizations.",
+          "category": "Data"
+        },
+        "cloudCost": {
+          "title": "Cloud Cost Optimization Strategies",
+          "excerpt": "Practical strategies to reduce your cloud spending without sacrificing performance or reliability.",
+          "content": "Cloud costs can spiral out of control if not managed properly.",
+          "category": "Cloud"
+        },
+        "mlProduction": {
+          "title": "Machine Learning in Production",
+          "excerpt": "Challenges and solutions for deploying machine learning models at scale in production environments.",
+          "content": "Deploying ML models to production requires careful planning and monitoring.",
+          "category": "ML"
+        },
+        "realtimeAnalytics": {
+          "title": "Real-time Analytics with Streaming Data",
+          "excerpt": "Leveraging streaming data technologies to build real-time analytics platforms.",
+          "content": "Real-time analytics enable organizations to make decisions based on current data.",
+          "category": "Data"
+        },
+        "kubernetes": {
+          "title": "Kubernetes Best Practices",
+          "excerpt": "Essential practices for running Kubernetes in production and managing containerized applications.",
+          "content": "Kubernetes has become the standard for container orchestration.",
+          "category": "DevOps"
+        }
+      },
       "newsletter": {
         "title": "Subscribe to Our Newsletter",
         "subtitle": "Get the latest insights delivered to your inbox",
@@ -439,7 +485,31 @@ export const translations = {
       "error": "An error occurred while sending your message.",
       "errorOccurred": "Please try again.",
       "faq": {
-        "title": "Frequently Asked Questions"
+        "title": "Frequently Asked Questions",
+        "timeline": {
+          "q": "What is your typical project timeline?",
+          "a": "Project timelines vary based on scope and complexity. We typically start with a discovery phase to understand your requirements and provide accurate estimates. Most projects range from 2-6 months."
+        },
+        "support": {
+          "q": "Do you provide ongoing support after project completion?",
+          "a": "Yes, we offer comprehensive post-launch support and maintenance packages. We can discuss support options that best fit your needs."
+        },
+        "technologies": {
+          "q": "What technologies do you work with?",
+          "a": "We work with a wide range of modern technologies including Python, JavaScript, React, Node.js, AWS, GCP, Kubernetes, and many others. We choose the best tools for your specific project requirements."
+        },
+        "confidentiality": {
+          "q": "How do you handle confidentiality?",
+          "a": "We take confidentiality seriously and sign NDAs for all projects. Your data and intellectual property are protected."
+        },
+        "pricing": {
+          "q": "How is pricing determined?",
+          "a": "Pricing depends on project scope, complexity, team size, and duration. We provide detailed estimates after the discovery phase and can discuss flexible engagement models."
+        },
+        "remote": {
+          "q": "Do you work with remote teams?",
+          "a": "Yes, we have experience working with distributed teams across different time zones. We use modern collaboration tools to ensure smooth communication and project delivery."
+        }
       }
     },
     "notFound": {
@@ -910,7 +980,31 @@ export const translations = {
       "error": "حدث خطأ أثناء إرسال رسالتك.",
       "errorOccurred": "يرجى المحاولة مرة أخرى.",
       "faq": {
-        "title": "الأسئلة الشائعة"
+        "title": "الأسئلة الشائعة",
+        "timeline": {
+          "q": "ما هو الجدول الزمني النموذجي للمشروع؟",
+          "a": "تختلف الجداول الزمنية للمشروع بناءً على النطاق والتعقيد. نبدأ عادةً بمرحلة اكتشاف لفهم متطلباتك وتقديم تقديرات دقيقة. معظم المشاريع تستغرق من 2 إلى 6 أشهر."
+        },
+        "support": {
+          "q": "هل تقدمون دعماً مستمراً بعد انتهاء المشروع؟",
+          "a": "نعم، نقدم حزم دعم وصيانة شاملة بعد الإطلاق. يمكننا مناقشة خيارات الدعم التي تناسب احتياجاتك."
+        },
+        "technologies": {
+          "q": "ما هي التقنيات التي تعملون معها؟",
+          "a": "نعمل مع مجموعة واسعة من التقنيات الحديثة بما في ذلك Python و JavaScript و React و Node.js و AWS و GCP و Kubernetes وغيرها الكثير. نختار أفضل الأدوات لمتطلبات مشروعك المحددة."
+        },
+        "confidentiality": {
+          "q": "كيف تتعاملون مع السرية؟",
+          "a": "نأخذ السرية على محمل الجد ونوقع اتفاقيات عدم الإفصاح لجميع المشاريع. بيانات ملكيتك الفكرية محمية."
+        },
+        "pricing": {
+          "q": "كيف يتم تحديد الأسعار؟",
+          "a": "يعتمد التسعير على نطاق المشروع والتعقيد وحجم الفريق والمدة. نقدم تقديرات مفصلة بعد مرحلة الاكتشاف ويمكننا مناقشة نماذج الانخراط المرنة."
+        },
+        "remote": {
+          "q": "هل تعملون مع فرق بعيدة؟",
+          "a": "نعم، لدينا خبرة في العمل مع فرق موزعة عبر مناطق زمنية مختلفة. نستخدم أدوات تعاون حديثة لضمان تواصل سلس وتسليم المشروع."
+        }
       }
     },
     "notFound": {
