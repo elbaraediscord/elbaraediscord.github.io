@@ -113,6 +113,9 @@ export const translations = {
       mission: {
         title: 'Our Mission',
         content: 'To empower organizations with cutting-edge technology solutions that drive digital transformation and create lasting business value.',
+        description1: 'HikmaNova was founded with a vision to transform businesses through innovative technology solutions. We believe that technology should empower organizations, not complicate them.',
+        description2: 'Our team brings together experts from various domains to deliver comprehensive solutions that address real business challenges. We are committed to excellence, innovation, and customer success.',
+        imageAlt: 'HikmaNova Team',
       },
       values: {
         title: 'Our Values',
@@ -163,6 +166,13 @@ export const translations = {
       hero: {
         title: 'Our Services',
         subtitle: 'Comprehensive technology solutions tailored to your needs',
+      },
+      process: {
+        title: 'Our Process',
+        subtitle: 'How we deliver exceptional results',
+      },
+      why: {
+        title: 'Why Choose HikmaNova',
       },
       aiStrategy: {
         title: 'AI Strategy',
@@ -219,6 +229,14 @@ export const translations = {
       filterCloud: 'Cloud',
       filterWeb: 'Web',
       filterRobotics: 'Robotics',
+      noProjects: 'No projects found in this category',
+      categories: {
+        ai: 'Artificial Intelligence',
+        data: 'Data Engineering',
+        cloud: 'Cloud Infrastructure',
+        web: 'Web Development',
+        robotics: 'Robotics & IoT',
+      },
     },
 
     // Project Detail Page
@@ -309,6 +327,9 @@ export const translations = {
         title: 'Get In Touch',
         subtitle: 'Have a project in mind? We\'d love to hear from you. Reach out and let\'s discuss how we can help.',
       },
+      success: 'Message sent successfully! We\'ll get back to you soon.',
+      error: 'Failed to send message. Please try again.',
+      errorOccurred: 'An error occurred. Please try again later.',
       info: {
         email: {
           label: 'Email',
@@ -571,6 +592,9 @@ export const translations = {
       mission: {
         title: 'مهمتنا',
         content: 'تمكين المنظمات بحلول تكنولوجية متطورة تحقق التحول الرقمي وتخلق قيمة عمل دائمة.',
+        description1: 'تأسست HikmaNova برؤية لتحويل الأعمال من خلال حلول تكنولوجية مبتكرة. نعتقد أن التكنولوجيا يجب أن تمكن المنظمات، وليس أن تعقدها.',
+        description2: 'يجمع فريقنا خبراء من مجالات مختلفة لتقديم حلول شاملة تعالج التحديات التجارية الحقيقية. نحن ملتزمون بالتميز والابتكار ونجاح العملاء.',
+        imageAlt: 'فريق HikmaNova',
       },
       values: {
         title: 'قيمنا',
@@ -621,6 +645,13 @@ export const translations = {
       hero: {
         title: 'خدماتنا',
         subtitle: 'حلول تكنولوجية شاملة مخصصة لاحتياجاتك',
+      },
+      process: {
+        title: 'عملية العمل',
+        subtitle: 'كيف نقدم نتائج استثنائية',
+      },
+      why: {
+        title: 'لماذا تختار HikmaNova',
       },
       aiStrategy: {
         title: 'استراتيجية الذكاء الاصطناعي',
@@ -677,6 +708,14 @@ export const translations = {
       filterCloud: 'السحابة',
       filterWeb: 'الويب',
       filterRobotics: 'الروبوتات',
+      noProjects: 'لم يتم العثور على مشاريع في هذه الفئة',
+      categories: {
+        ai: 'الذكاء الاصطناعي',
+        data: 'هندسة البيانات',
+        cloud: 'البنية التحتية السحابية',
+        web: 'تطوير الويب',
+        robotics: 'الروبوتات وإنترنت الأشياء',
+      },
     },
 
     // Project Detail Page
@@ -767,6 +806,9 @@ export const translations = {
         title: 'تواصل معنا',
         subtitle: 'هل لديك مشروع في الذهن؟ نود أن نسمع منك. تواصل معنا ودعنا نناقش كيف يمكننا مساعدتك.',
       },
+      success: 'تم إرسال الرسالة بنجاح! سنعود إليك قريباً.',
+      error: 'فشل إرسال الرسالة. يرجى المحاولة مرة أخرى.',
+      errorOccurred: 'حدث خطأ. يرجى المحاولة لاحقاً.',
       info: {
         email: {
           label: 'البريد الإلكتروني',
