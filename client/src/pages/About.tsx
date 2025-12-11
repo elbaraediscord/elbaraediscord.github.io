@@ -1,83 +1,63 @@
 import Layout from "@/components/Layout";
 import { CheckCircle } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useTranslation } from "@/lib/translations";
 
 const values = [
   {
-    title: "Innovation",
-    description: "We push boundaries and explore new possibilities in technology and AI",
+    titleKey: "about.values.innovation.title",
+    descriptionKey: "about.values.innovation.description",
   },
   {
-    title: "Ethics",
-    description: "Responsible AI development with transparency and accountability",
+    titleKey: "about.values.ethics.title",
+    descriptionKey: "about.values.ethics.description",
   },
   {
-    title: "Education",
-    description: "Sharing knowledge and empowering the next generation of innovators",
+    titleKey: "about.values.education.title",
+    descriptionKey: "about.values.education.description",
   },
 ];
 
 const team = [
   {
-    name: "Eng. Ibrahim L.",
-    role: "Founder",
-    bio: "Keeps teams aligned, goals clear, and every project delivered flawlessly.",
+    nameKey: "about.team.ibrahim.name",
+    roleKey: "about.team.ibrahim.role",
+    bioKey: "about.team.ibrahim.bio",
     avatar: "Anonymous.jpg",
   },
   {
-    name: "Mr. Hicham",
-    role: "Co-Founder",
-    bio: "Strives to bridge innovation, functionality, and real-world human needs.",
+    nameKey: "about.team.hicham.name",
+    roleKey: "about.team.hicham.role",
+    bioKey: "about.team.hicham.bio",
     avatar: "Anonymous.jpg",
   },
   {
-    name: "Eng. Ayoub G.",
-    role: "Co-Founder",
-    bio: "Innovative engineer solving complex technical challenges with precision and creativity.",
+    nameKey: "about.team.ayoub.name",
+    roleKey: "about.team.ayoub.role",
+    bioKey: "about.team.ayoub.bio",
     avatar: "Anonymous.jpg",
   },
 ];
-
-const timeline = [];
-{/*
-const timeline = [
-  {
-    year: "2025",
-    title: "Founded",
-    description: "HikmaNova was established with a vision to innovate through technology",
-  },
-  {
-    year: "2025",
-    title: "First Major Project",
-    description: "Delivered AI-powered solution for Fortune 500 company, processing 10M+ records daily",
-  },
-  {
-    year: "2025",
-    title: "Team Expansion",
-    description: "Grew to 15+ team members across AI, data, and cloud specialties",
-  },
-  {
-    year: "2025",
-    title: "Industry Recognition",
-    description: "Recognized as top AI innovation studio in the region",
-  },
-  {
-    year: "2025",
-    title: "Global Reach",
-    description: "Expanded operations internationally with clients across 5 continents",
-  },
-];
-*/}
 
 export default function About() {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
+
+  const missionPoints = [
+    "about.mission.point1",
+    "about.mission.point2",
+    "about.mission.point3",
+  ];
+
   return (
     <Layout>
       {/* Hero */}
       <section className="py-16 md:py-24 bg-card">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">About HikmaNova</h1>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">{t('about.hero.title')}</h1>
             <p className="text-lg text-muted-foreground">
-              We're a team of innovators, engineers, and visionaries dedicated to solving complex problems through cutting-edge technology and artificial intelligence.
+              {t('about.hero.subtitle')}
             </p>
           </div>
         </div>
@@ -88,22 +68,18 @@ export default function About() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Our Mission</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">{t('about.mission.title')}</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                To empower organizations through innovative AI-powered solutions and scalable technology platforms that drive measurable business impact.
+                {t('about.mission.description1')}
               </p>
               <p className="text-lg text-muted-foreground mb-6">
-                We believe that technology should be accessible, ethical, and designed with purpose. Every project we undertake is an opportunity to create solutions that matter.
+                {t('about.mission.description2')}
               </p>
               <div className="space-y-3">
-                {[
-                  "Delivering measurable business value",
-                  "Building sustainable and scalable solutions",
-                  "Fostering innovation and continuous learning",
-                ].map((item, idx) => (
+                {missionPoints.map((pointKey, idx) => (
                   <div key={idx} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                    <span>{item}</span>
+                    <span>{t(pointKey)}</span>
                   </div>
                 ))}
               </div>
@@ -111,7 +87,7 @@ export default function About() {
             <div className="relative h-96 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=600&fit=crop"
-                alt="Team collaboration"
+                alt={t('about.mission.imageAlt')}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -123,9 +99,9 @@ export default function About() {
       <section className="py-16 md:py-24 bg-card">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Our Values</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">{t('about.values.title')}</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide everything we do
+              {t('about.values.subtitle')}
             </p>
           </div>
 
@@ -135,8 +111,8 @@ export default function About() {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                   <span className="text-primary font-serif font-bold text-lg">{idx + 1}</span>
                 </div>
-                <h3 className="font-serif text-xl font-bold mb-3">{value.title}</h3>
-                <p className="text-muted-foreground">{value.description}</p>
+                <h3 className="font-serif text-xl font-bold mb-3">{t(value.titleKey)}</h3>
+                <p className="text-muted-foreground">{t(value.descriptionKey)}</p>
               </div>
             ))}
           </div>
@@ -147,9 +123,9 @@ export default function About() {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Our Team</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">{t('about.team.title')}</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Talented individuals united by a passion for innovation
+              {t('about.team.subtitle')}
             </p>
           </div>
 
@@ -159,52 +135,18 @@ export default function About() {
                 <div className="mb-4 overflow-hidden rounded-lg h-48">
                   <img
                     src={member.avatar}
-                    alt={member.name}
+                    alt={t(member.nameKey)}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="font-serif font-bold text-lg mb-1">{member.name}</h3>
-                <p className="text-sm text-primary font-semibold mb-2">{member.role}</p>
-                <p className="text-sm text-muted-foreground">{member.bio}</p>
+                <h3 className="font-serif font-bold text-lg mb-1">{t(member.nameKey)}</h3>
+                <p className="text-sm text-primary font-semibold mb-2">{t(member.roleKey)}</p>
+                <p className="text-sm text-muted-foreground">{t(member.bioKey)}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-            
-      {/* Timeline 
-      <section className="py-16 md:py-24 bg-card">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Our Journey</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Key milestones in our growth and evolution
-            </p>
-          </div>
-
-          <div className="max-w-3xl mx-auto">
-            {timeline.map((item, idx) => (
-              <div key={idx} className="flex gap-6 mb-8 last:mb-0">
-                <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-serif font-bold">
-                    {idx + 1}
-                  </div>
-                  {idx < timeline.length - 1 && (
-                    <div className="w-1 h-24 bg-border mt-4" />
-                  )}
-                </div>
-                <div className="pb-8">
-                  <p className="text-sm font-semibold text-primary mb-1">{item.year}</p>
-                  <h3 className="font-serif font-bold text-lg mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground">{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-      
     </Layout>
   );
 }
-

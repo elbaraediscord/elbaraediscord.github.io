@@ -2,142 +2,115 @@ import Layout from "@/components/Layout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Brain, Code, Database, Cloud, Zap, Rocket, BarChart3, Shield } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useTranslation } from "@/lib/translations";
 
 const services = [
   {
     icon: Brain,
-    title: "Telecom Equipment Monitoring",
-    description: "Develop comprehensive AI strategies tailored to your business goals and market positioning",
-    features: [
-      "Energy systems (UPS, generators, rectifiers)",
-      "Real-time alarms & dashboards",
-      "Predictive maintenance",
-    ],
+    titleKey: "services.telecom.title",
+    descriptionKey: "services.telecom.description",
+    featuresKey: ["services.telecom.feature1", "services.telecom.feature2", "services.telecom.feature3"],
   },
   {
     icon: Code,
-    title: "Product Prototyping",
-    description: "Rapid prototyping and MVP development for innovative ideas",
-    features: [
-      "Concept validation",
-      "Rapid UI/UX and functional prototyping",
-      "Iterative testing with users",
-      "MVP build and go-to-market preparation",
-    ],
+    titleKey: "services.prototyping.title",
+    descriptionKey: "services.prototyping.description",
+    featuresKey: ["services.prototyping.feature1", "services.prototyping.feature2", "services.prototyping.feature3", "services.prototyping.feature4"],
   },
   {
     icon: Database,
-    title: "IoT Solutions",
-    description: "Design and deploy end-to-end IoT & IIoT  systems",
-    features: [
-      "Hardware and device integration",
-      "Secure connectivity & protocol implementation (SNMP, MQTT, Modbus, CANbus,  etc.)",
-      "Cloud platform integration",
-      "Real-time monitoring dashboards & analytics",
-    ],
+    titleKey: "services.iot.title",
+    descriptionKey: "services.iot.description",
+    featuresKey: ["services.iot.feature1", "services.iot.feature2", "services.iot.feature3", "services.iot.feature4"],
   },
   {
     icon: Cloud,
-    title: "AI Strategy",
-    description: "Develop comprehensive AI strategies tailored to your business goals",
-    features: [
-      "AI capability assessment",
-      "Use case identification",
-      "Technology and adoption roadmap",
-      "Risk, governance, and compliance alignment",
-    ],
+    titleKey: "services.aiStrategy.title",
+    descriptionKey: "services.aiStrategy.description",
+    featuresKey: ["services.aiStrategy.feature1", "services.aiStrategy.feature2", "services.aiStrategy.feature3", "services.aiStrategy.feature4"],
   },
   {
     icon: Rocket,
-    title: "DevOps for AI & Cybersecurity",
-    description: "Integrate secure, automated, and scalable practices across your AI and software lifecycle",
-    features: [
-      "Secure CI/CD pipelines for AI and software systems",
-      "Infrastructure as Code with embedded security controls",
-      "Vulnerability scanning & automated security testing (SAST/DAST)",
-      "Identity, access, and secrets management",
-      "Continuous monitoring, threat detection & incident response",
-    ],
+    titleKey: "services.devops.title",
+    descriptionKey: "services.devops.description",
+    featuresKey: ["services.devops.feature1", "services.devops.feature2", "services.devops.feature3", "services.devops.feature4", "services.devops.feature5"],
   },
   {
     icon: BarChart3,
-    title: "Workforce Monitoring & Optimization",
-    description: "Transform data into actionable insights with advanced analytics solutions",
-    features: [
-      "Real-time team tracking",
-      "Smart scheduling & task management",
-      "Field operations visibility",
-      "Performance & safety analytics",
-      "AIPowered Analytics for Team Vitality Insights",
-    ],
+    titleKey: "services.workforce.title",
+    descriptionKey: "services.workforce.description",
+    featuresKey: ["services.workforce.feature1", "services.workforce.feature2", "services.workforce.feature3", "services.workforce.feature4", "services.workforce.feature5"],
   },
   {
     icon: Zap,
-    title: "Analytics & Insights",
-    description: "Transform data into actionable insights with advanced analytics solutions",
-    features: [
-      "Business intelligence",
-      "Predictive analytics",
-      "Custom dashboards",
-      "Data visualization",
-    ],
+    titleKey: "services.analytics.title",
+    descriptionKey: "services.analytics.description",
+    featuresKey: ["services.analytics.feature1", "services.analytics.feature2", "services.analytics.feature3", "services.analytics.feature4"],
   },
   {
     icon: Shield,
-    title: "Security & Compliance",
-    description: "Secure your AI and data systems with enterprise-grade security practices",
-    features: [
-      "Security assessment",
-      "Compliance implementation",
-      "Data privacy",
-      "Threat detection",
-    ],
+    titleKey: "services.security.title",
+    descriptionKey: "services.security.description",
+    featuresKey: ["services.security.feature1", "services.security.feature2", "services.security.feature3", "services.security.feature4"],
   },
 ];
 
 const processSteps = [
   {
     step: "01",
-    title: "Discovery & Assessment",
-    description: "We begin by understanding your business, challenges, and goals through comprehensive discovery sessions.",
+    titleKey: "services.process.discovery.title",
+    descriptionKey: "services.process.discovery.description",
   },
   {
     step: "02",
-    title: "Strategy & Planning",
-    description: "Develop a detailed strategy and roadmap aligned with your business objectives and technical requirements.",
+    titleKey: "services.process.strategy.title",
+    descriptionKey: "services.process.strategy.description",
   },
   {
     step: "03",
-    title: "Design & Architecture",
-    description: "Create scalable, secure architectures designed for your specific use cases and future growth.",
+    titleKey: "services.process.design.title",
+    descriptionKey: "services.process.design.description",
   },
   {
     step: "04",
-    title: "Implementation",
-    description: "Build and deploy solutions using best practices, modern technologies, and agile methodologies.",
+    titleKey: "services.process.implementation.title",
+    descriptionKey: "services.process.implementation.description",
   },
   {
     step: "05",
-    title: "Testing & Validation",
-    description: "Rigorous testing ensures quality, performance, and reliability before production deployment.",
+    titleKey: "services.process.testing.title",
+    descriptionKey: "services.process.testing.description",
   },
   {
     step: "06",
-    title: "Deployment & Support",
-    description: "Seamless deployment with ongoing support, monitoring, and optimization for long-term success.",
+    titleKey: "services.process.deployment.title",
+    descriptionKey: "services.process.deployment.description",
   },
 ];
 
+const whyChooseUs = [
+  { titleKey: "services.why.expert.title", descriptionKey: "services.why.expert.description" },
+  { titleKey: "services.why.track.title", descriptionKey: "services.why.track.description" },
+  { titleKey: "services.why.technology.title", descriptionKey: "services.why.technology.description" },
+  { titleKey: "services.why.scalable.title", descriptionKey: "services.why.scalable.description" },
+  { titleKey: "services.why.communication.title", descriptionKey: "services.why.communication.description" },
+  { titleKey: "services.why.support.title", descriptionKey: "services.why.support.description" },
+];
+
 export default function Services() {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
+
   return (
     <Layout>
       {/* Hero */}
       <section className="py-16 md:py-24 bg-card">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Our Services</h1>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">{t('services.hero.title')}</h1>
             <p className="text-lg text-muted-foreground">
-              Comprehensive solutions for your innovation and technology needs
+              {t('services.hero.subtitle')}
             </p>
           </div>
         </div>
@@ -152,13 +125,13 @@ export default function Services() {
               return (
                 <div key={idx} className="p-8 rounded-lg border border-border bg-card hover:border-primary transition-colors">
                   <Icon className="w-10 h-10 text-primary mb-4" />
-                  <h3 className="font-serif text-2xl font-bold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground mb-6">{service.description}</p>
+                  <h3 className="font-serif text-2xl font-bold mb-3">{t(service.titleKey)}</h3>
+                  <p className="text-muted-foreground mb-6">{t(service.descriptionKey)}</p>
                   <ul className="space-y-2">
-                    {service.features.map((feature, fidx) => (
+                    {service.featuresKey.map((featureKey, fidx) => (
                       <li key={fidx} className="flex items-start gap-2 text-sm">
                         <span className="text-primary font-bold mt-1">•</span>
-                        <span>{feature}</span>
+                        <span>{t(featureKey)}</span>
                       </li>
                     ))}
                   </ul>
@@ -173,9 +146,9 @@ export default function Services() {
       <section className="py-16 md:py-24 bg-card">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Our Process</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">{t('services.process.title')}</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A proven methodology for delivering successful projects
+              {t('services.process.subtitle')}
             </p>
           </div>
 
@@ -185,8 +158,8 @@ export default function Services() {
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary text-primary-foreground font-serif font-bold text-lg mb-4">
                   {item.step}
                 </div>
-                <h3 className="font-serif font-bold text-lg mb-3">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
+                <h3 className="font-serif font-bold text-lg mb-3">{t(item.titleKey)}</h3>
+                <p className="text-sm text-muted-foreground">{t(item.descriptionKey)}</p>
               </div>
             ))}
           </div>
@@ -197,35 +170,10 @@ export default function Services() {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8">Why Choose HikmaNova</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-8">{t('services.why.title')}</h2>
             
             <div className="space-y-6">
-              {[
-                {
-                  title: "Expert Team",
-                  description: "Years of combined experience in AI, data engineering, and cloud architecture",
-                },
-                {
-                  title: "Proven Track Record",
-                  description: "Successfully delivered projects to multiple companies",
-                },
-                {
-                  title: "Cutting-Edge Technology",
-                  description: "We stay at the forefront of AI and technology trends to deliver modern solutions",
-                },
-                {
-                  title: "Scalable Solutions",
-                  description: "Our architectures are designed to grow with your business needs",
-                },
-                {
-                  title: "Transparent Communication",
-                  description: "Regular updates, clear milestones, and collaborative partnership approach",
-                },
-                {
-                  title: "Long-Term Support",
-                  description: "Ongoing maintenance, optimization, and support after project launch",
-                },
-              ].map((item, idx) => (
+              {whyChooseUs.map((item, idx) => (
                 <div key={idx} className="flex gap-4">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-8 w-8 rounded-full bg-primary text-primary-foreground">
@@ -233,8 +181,8 @@ export default function Services() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-serif font-bold mb-1">{item.title}</h3>
-                    <p className="text-muted-foreground">{item.description}</p>
+                    <h3 className="font-serif font-bold mb-1">{t(item.titleKey)}</h3>
+                    <p className="text-muted-foreground">{t(item.descriptionKey)}</p>
                   </div>
                 </div>
               ))}
@@ -246,13 +194,13 @@ export default function Services() {
       {/* CTA */}
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Get Started?</h2>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">{t('services.cta.title')}</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
-            Let's discuss how our services can help you achieve your innovation goals
+            {t('services.cta.subtitle')}
           </p>
           <Link href="/contact">
             <Button size="lg" variant="secondary">
-              Schedule a Consultation
+              {t('services.cta.button')}
             </Button>
           </Link>
         </div>
@@ -260,4 +208,3 @@ export default function Services() {
     </Layout>
   );
 }
-

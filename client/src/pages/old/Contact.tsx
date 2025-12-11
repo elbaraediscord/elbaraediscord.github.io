@@ -3,13 +3,8 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { toast } from "sonner";
-import { useLanguage } from "@/contexts/LanguageContext";
-import { useTranslation } from "@/lib/translations";
 
 export default function Contact() {
-  const { language } = useLanguage();
-  const { t } = useTranslation(language);
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,64 +26,36 @@ export default function Contact() {
 
     // Validation
     if (!formData.name.trim()) {
-      toast.error(t('contact.validation.name'));
+      toast.error("Please enter your name");
       return;
     }
     if (!formData.email.trim() || !formData.email.includes("@")) {
-      toast.error(t('contact.validation.email'));
+      toast.error("Please enter a valid email");
       return;
     }
     if (!formData.subject.trim()) {
-      toast.error(t('contact.validation.subject'));
+      toast.error("Please enter a subject");
       return;
     }
     if (!formData.message.trim()) {
-      toast.error(t('contact.validation.message'));
+      toast.error("Please enter a message");
       return;
     }
 
     setIsSubmitting(true);
 
-    try {
-      const response = await fetch("https://formspree.io/f/mkglzgqd", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        }),
+    // Simulate form submission
+    setTimeout(() => {
+      toast.success("Message sent successfully! We'll get back to you soon.");
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
       });
-
-      if (response.ok) {
-        toast.success(t('contact.success'));
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-      } else {
-        toast.error(t('contact.error'));
-      }
-    } catch (error) {
-      toast.error(t('contact.errorOccurred'));
-    } finally {
       setIsSubmitting(false);
-    }
+    }, 1000);
   };
-
-  const faqs = [
-    { qKey: "contact.faq.timeline.q", aKey: "contact.faq.timeline.a" },
-    { qKey: "contact.faq.support.q", aKey: "contact.faq.support.a" },
-    { qKey: "contact.faq.technologies.q", aKey: "contact.faq.technologies.a" },
-    { qKey: "contact.faq.confidentiality.q", aKey: "contact.faq.confidentiality.a" },
-    { qKey: "contact.faq.pricing.q", aKey: "contact.faq.pricing.a" },
-    { qKey: "contact.faq.remote.q", aKey: "contact.faq.remote.a" },
-  ];
 
   return (
     <Layout>
@@ -96,9 +63,9 @@ export default function Contact() {
       <section className="py-16 md:py-24 bg-card">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">{t('contact.hero.title')}</h1>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Get In Touch</h1>
             <p className="text-lg text-muted-foreground">
-              {t('contact.hero.subtitle')}
+              Have a project in mind? We'd love to hear from you. Reach out and let's discuss how we can help.
             </p>
           </div>
         </div>
@@ -112,7 +79,7 @@ export default function Contact() {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
                 <Mail className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-serif font-bold text-lg mb-2">{t('contact.info.email.label')}</h3>
+              <h3 className="font-serif font-bold text-lg mb-2">Email</h3>
               <a
                 href="mailto:info@hikmanova.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -125,7 +92,7 @@ export default function Contact() {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
                 <Phone className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-serif font-bold text-lg mb-2">{t('contact.info.phone.label')}</h3>
+              <h3 className="font-serif font-bold text-lg mb-2">Phone</h3>
               <a
                 href="tel:+213553843333"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -138,10 +105,10 @@ export default function Contact() {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-serif font-bold text-lg mb-2">{t('contact.info.location.label')}</h3>
+              <h3 className="font-serif font-bold text-lg mb-2">Location</h3>
               <p className="text-muted-foreground">
-                {t('contact.info.location.city')}<br />
-                {t('contact.info.location.country')}
+                Algiers<br />
+                Algeria
               </p>
             </div>
           </div>
@@ -152,17 +119,17 @@ export default function Contact() {
       <section className="py-16 md:py-24">
         <div className="container max-w-2xl">
           <div className="mb-12">
-            <h2 className="text-3xl font-serif font-bold mb-4">{t('contact.form.title')}</h2>
+            <h2 className="text-3xl font-serif font-bold mb-4">Send us a Message</h2>
             <p className="text-muted-foreground">
-              {t('contact.form.subtitle')}
+              Fill out the form below and we'll get back to you as soon as possible.
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form action="https://formspree.io/f/mkglzgqd" method="POST" className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold mb-2">
-                  {t('contact.form.name')}
+                  Name
                 </label>
                 <input
                   type="text"
@@ -170,7 +137,7 @@ export default function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder={t('contact.form.namePlaceholder')}
+                  placeholder="Your name"
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                   required
                 />
@@ -178,7 +145,7 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="email" className="block text-sm font-semibold mb-2">
-                  {t('contact.form.email')}
+                  Email
                 </label>
                 <input
                   type="email"
@@ -186,7 +153,7 @@ export default function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder={t('contact.form.emailPlaceholder')}
+                  placeholder="your@email.com"
                   className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                   required
                 />
@@ -195,7 +162,7 @@ export default function Contact() {
           
             <div>
               <label htmlFor="subject" className="block text-sm font-semibold mb-2">
-                {t('contact.form.subject')}
+                Subject
               </label>
               <input
                 type="text"
@@ -203,7 +170,7 @@ export default function Contact() {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                placeholder={t('contact.form.subjectPlaceholder')}
+                placeholder="Project inquiry"
                 className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                 required
               />
@@ -211,19 +178,27 @@ export default function Contact() {
 
             <div>
               <label htmlFor="message" className="block text-sm font-semibold mb-2">
-                {t('contact.form.message')}
+                Message
               </label>
               <textarea
                 id="message"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder={t('contact.form.messagePlaceholder')}
+                placeholder="Tell us about your project..."
                 rows={6}
                 className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
                 required
               />
             </div>
+            
+            <input type="hidden" name="_replyto" value={formData.email} />
+
+            <input
+              type="hidden"
+              name="_next"
+              value="https://hikmanova.com/contact"
+            />
 
             <Button
               type="submit"
@@ -233,12 +208,12 @@ export default function Contact() {
             >
               {isSubmitting ? (
                 <>
-                  <span>{t('contact.form.sending')}</span>
+                  <span>Sending...</span>
                 </>
               ) : (
                 <>
                   <Send className="w-4 h-4" />
-                  {t('contact.form.send')}
+                  Send Message
                 </>
               )}
             </Button>
@@ -249,18 +224,57 @@ export default function Contact() {
       {/* FAQ */}
       <section className="py-16 md:py-24 bg-card">
         <div className="container max-w-3xl">
-          <h2 className="text-3xl font-serif font-bold mb-8">{t('contact.faq.title')}</h2>
+          <h2 className="text-3xl font-serif font-bold mb-8">Frequently Asked Questions</h2>
 
           <div className="space-y-6">
-            {faqs.map((item, idx) => (
+            {[
+              {
+                q: "What is your typical project timeline?",
+                a: "Project timelines vary depending on scope and complexity. Most projects range from 2-6 months. We'll provide a detailed timeline during the discovery phase.",
+              },
+              {
+                q: "Do you offer ongoing support?",
+                a: "Yes, we offer comprehensive support packages including maintenance, monitoring, and optimization. We can discuss your specific needs during consultation.",
+              },
+              {
+                q: "What technologies do you specialize in?",
+                a: "We specialize in AI/ML, data engineering, cloud infrastructure, and full-stack web development. We're also flexible and can work with your preferred technologies.",
+              },
+              {
+                q: "How do you handle confidentiality?",
+                a: "We take confidentiality seriously and sign NDAs for all projects. Your data and intellectual property are protected.",
+              },
+              {
+                q: "What is your pricing model?",
+                a: "We offer flexible pricing models including fixed-price projects, time-and-materials, and retainer arrangements. We'll work with you to find the best fit.",
+              },
+              {
+                q: "Can you work with remote teams?",
+                a: "Absolutely! We have experience working with distributed teams across different time zones. We use modern collaboration tools to ensure smooth communication.",
+              },
+            ].map((item, idx) => (
               <div key={idx} className="p-6 rounded-lg border border-border bg-background">
-                <h3 className="font-serif font-bold text-lg mb-3">{t(item.qKey)}</h3>
-                <p className="text-muted-foreground">{t(item.aKey)}</p>
+                <h3 className="font-serif font-bold text-lg mb-3">{item.q}</h3>
+                <p className="text-muted-foreground">{item.a}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* CTA 
+      <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+        <div className="container text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Start Your Project?</h2>
+          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+            Let's schedule a consultation and discuss how we can help you achieve your goals
+          </p>
+          <Button size="lg" variant="secondary">
+            Schedule a Call
+          </Button>
+        </div>
+      </section> */}
     </Layout>
   );
 }
+

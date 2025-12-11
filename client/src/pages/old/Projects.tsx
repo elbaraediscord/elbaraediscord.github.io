@@ -3,182 +3,166 @@ import { Link } from "wouter";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
-import { useTranslation } from "@/lib/translations";
 
 const allProjects = [
   {
     id: 1,
-    titleKey: "projects.teamMonitor.title",
-    categoryKey: "projects.teamMonitor.category",
-    descriptionKey: "projects.teamMonitor.description",
+    title: "TeamMonitor - AI-Powered Workforce Tracking & Management Solution",
+    category: "AI",
+    description: "Innovative solution to address the operational challenges of managing field teams during the FIFA World Cup 2022",
     image: "Qatar-World-Cup.jpg",
     slug: "fifa-team-monitor",
     year: 2025,
   },
   {
     id: 2,
-    titleKey: "projects.nusuk.title",
-    categoryKey: "projects.nusuk.category",
-    descriptionKey: "projects.nusuk.description",
+    title: "Nusuk Smart Card Enhancement",
+    category: "AI",
+    description: "An innovative project designed to upgrade the Nusuk smart card by integrating advanced technologies with artificial intelligence.",
     image: "Nusuk-Card.jpg",
     slug: "Nusuk-smart-crad",
     year: 2025,
   },
   {
     id: 3,
-    titleKey: "projects.cryptocurrency.title",
-    categoryKey: "projects.cryptocurrency.category",
-    descriptionKey: "projects.cryptocurrency.description",
+    title: "Cryptocurrency Investment Platform",
+    category: "Software Engineering",
+    description: "Comprehensive cryptocurrency exchange platform designed to help agencies manage customer portfolios with real-time trading, secure wallets, and advanced analytics",
     image: "cryptocurrency-investment-platform.jpg",
     slug: "cryptocurrency-investment-platform",
     year: 2025,
   },
   {
     id: 4,
-    titleKey: "projects.chatbot.title",
-    categoryKey: "projects.chatbot.category",
-    descriptionKey: "projects.chatbot.description",
+    title: "Smart Chatbot for Customer Service",
+    category: "AI",
+    description: "AI-powered chatbot system that handles thousands of customer service requests on social media platforms with natural language processing and automated responses",
     image: "smart-chatbot-ai.jpg",
     slug: "smart-chatbot-customer-service",
     year: 2025,
   },
   {
     id: 5,
-    titleKey: "projects.erp.title",
-    categoryKey: "projects.erp.category",
-    descriptionKey: "projects.erp.description",
+    title: "Intervention Vouchers ERP System",
+    category: "Software Engineering",
+    description: "Enterprise resource planning solution built on Axonaut for managing artisan intervention vouchers, scheduling, and work order tracking with customer management",
     image: "intervention-vouchers-erp.jpg",
     slug: "intervention-vouchers-erp",
     year: 2025,
   },
   {
     id: 6,
-    titleKey: "projects.cybersecurity.title",
-    categoryKey: "projects.cybersecurity.category",
-    descriptionKey: "projects.cybersecurity.description",
+    title: "Cybersecurity Consulting & Audit Services",
+    category: "Software Engineering",
+    description: "Comprehensive cybersecurity consulting platform offering organizational audits, compliance evaluation, penetration testing, and security solution deployment",
     image: "cybersecurity-consulting.jpg",
     slug: "cybersecurity-consulting-audit",
     year: 2025,
   },
   {
     id: 7,
-    titleKey: "projects.technological.title",
-    categoryKey: "projects.technological.category",
-    descriptionKey: "projects.technological.description",
+    title: "Technological Dependency Research Series",
+    category: "Data",
+    description: "Educational webinar and conference series exploring technological dependency in software development, cybersecurity solutions, and the role of expertise in innovation",
     image: "technological-dependency-series.jpg",
     slug: "technological-dependency-research",
     year: 2025,
   },
   {
     id: 8,
-    titleKey: "projects.neural.title",
-    categoryKey: "projects.neural.category",
-    descriptionKey: "projects.neural.description",
+    title: "Neural Vision Platform",
+    category: "AI",
+    description: "Advanced computer vision system for real-time object detection and classification using state-of-the-art deep learning models",
     image: "Image 1.jpg",
     slug: "neural-vision-platform",
     year: 2025,
   },
   {
     id: 9,
-    titleKey: "projects.dataPipeline.title",
-    categoryKey: "projects.dataPipeline.category",
-    descriptionKey: "projects.dataPipeline.description",
+    title: "Data Pipeline Architecture",
+    category: "Data",
+    description: "Scalable ETL pipeline processing millions of records daily with real-time analytics and data quality monitoring",
     image: "Image 2.jpg",
     slug: "data-pipeline-architecture",
     year: 2025,
   },
   {
     id: 10,
-    titleKey: "projects.cloudOptimization.title",
-    categoryKey: "projects.cloudOptimization.category",
-    descriptionKey: "projects.cloudOptimization.description",
+    title: "Cloud Infrastructure Optimization",
+    category: "Cloud",
+    description: "Reduced cloud costs by 40% through intelligent resource allocation, auto-scaling, and infrastructure optimization",
     image: "Image 3.jpg",
     slug: "cloud-infrastructure-optimization",
     year: 2025,
   },
   {
     id: 11,
-    titleKey: "projects.robotics.title",
-    categoryKey: "projects.robotics.category",
-    descriptionKey: "projects.robotics.description",
+    title: "Robotics Control System",
+    category: "IoT & IIoT",
+    description: "Autonomous robotics control system with machine learning-based path planning and obstacle avoidance",
     image: "Image 4.jpg",
     slug: "robotics-control-system",
     year: 2025,
   },
   {
     id: 12,
-    titleKey: "projects.ecommerce.title",
-    categoryKey: "projects.ecommerce.category",
-    descriptionKey: "projects.ecommerce.description",
+    title: "E-Commerce Platform",
+    category: "Software Engineering",
+    description: "Full-stack e-commerce platform with AI-powered recommendations and real-time inventory management",
     image: "Image 5.jpg",
     slug: "ecommerce-platform",
     year: 2025,
   },
   {
     id: 13,
-    titleKey: "projects.predictive.title",
-    categoryKey: "projects.predictive.category",
-    descriptionKey: "projects.predictive.description",
+    title: "Predictive Analytics Engine",
+    category: "AI",
+    description: "Machine learning engine for predictive analytics, forecasting demand and identifying market trends",
     image: "Image 6.jpg",
     slug: "predictive-analytics-engine",
     year: 2025,
   },
   {
     id: 14,
-    titleKey: "projects.warehouse.title",
-    categoryKey: "projects.warehouse.category",
-    descriptionKey: "projects.warehouse.description",
+    title: "Real-Time Data Warehouse",
+    category: "Data",
+    description: "Enterprise data warehouse supporting real-time queries and complex analytical workloads",
     image: "Image 7.jpg",
     slug: "realtime-data-warehouse",
     year: 2025,
   },
   {
     id: 15,
-    titleKey: "projects.kubernetes.title",
-    categoryKey: "projects.kubernetes.category",
-    descriptionKey: "projects.kubernetes.description",
+    title: "Kubernetes Migration",
+    category: "Cloud",
+    description: "Migrated legacy applications to Kubernetes, improving scalability and reducing operational overhead",
     image: "Image 8.jpg",
     slug: "kubernetes-migration",
     year: 2025,
   },
   {
     id: 16,
-    titleKey: "projects.autonomous.title",
-    categoryKey: "projects.autonomous.category",
-    descriptionKey: "projects.autonomous.description",
+    title: "Autonomous Delivery Robot",
+    category: "IoT & IIoT",
+    description: "Autonomous delivery robot with computer vision, GPS navigation, and real-time traffic awareness",
     image: "Image 9.jpg",
     slug: "autonomous-delivery-robot",
     year: 2025,
   },
+
 ];
 
-const categories = [
-  { key: "all", labelKey: "projects.categories.all" },
-  { key: "AI", labelKey: "projects.categories.ai" },
-  { key: "Data", labelKey: "projects.categories.data" },
-  { key: "Cloud", labelKey: "projects.categories.cloud" },
-  { key: "Software Engineering", labelKey: "projects.categories.software" },
-  { key: "IoT & IIoT", labelKey: "projects.categories.iot" },
-];
+
+
+
+const categories = ["All", "AI", "Data", "Cloud", "Software Engineering", "IoT & IIoT"];
 
 export default function Projects() {
-  const { language } = useLanguage();
-  const { t } = useTranslation(language);
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProjects = selectedCategory === "All"
     ? allProjects
-    : allProjects.filter((p) => {
-        const categoryKey = p.categoryKey;
-        return t(categoryKey) === selectedCategory;
-      });
-
-  const stats = [
-    { labelKey: "projects.stats.completed", value: "9+" },
-    { labelKey: "projects.stats.team", value: "5+" },
-    { labelKey: "projects.stats.expertise", value: "10 years" },
-  ];
+    : allProjects.filter((p) => p.category === selectedCategory);
 
   return (
     <Layout>
@@ -186,9 +170,9 @@ export default function Projects() {
       <section className="py-16 md:py-24 bg-card">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">{t('projects.hero.title')}</h1>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Our Projects</h1>
             <p className="text-lg text-muted-foreground">
-              {t('projects.hero.subtitle')}
+              Explore our portfolio of innovative solutions across AI, data, cloud, web, and robotics
             </p>
           </div>
         </div>
@@ -200,12 +184,12 @@ export default function Projects() {
           <div className="flex flex-wrap gap-3 justify-center">
             {categories.map((category) => (
               <Button
-                key={category.key}
-                variant={selectedCategory === t(category.labelKey) ? "default" : "outline"}
-                onClick={() => setSelectedCategory(t(category.labelKey))}
+                key={category}
+                variant={selectedCategory === category ? "default" : "outline"}
+                onClick={() => setSelectedCategory(category)}
                 className="rounded-full"
               >
-                {t(category.labelKey)}
+                {category}
               </Button>
             ))}
           </div>
@@ -222,21 +206,21 @@ export default function Projects() {
                   <div className="relative overflow-hidden h-48 bg-muted">
                     <img
                       src={project.image}
-                      alt={t(project.titleKey)}
+                      alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-4 right-4">
                       <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-semibold rounded-full">
-                        {t(project.categoryKey)}
+                        {project.category}
                       </span>
                     </div>
                   </div>
                   <div className="p-6 flex flex-col flex-1">
                     <h3 className="font-serif text-lg font-bold mb-2 group-hover:text-primary transition-colors">
-                      {t(project.titleKey)}
+                      {project.title}
                     </h3>
                     <p className="text-sm text-muted-foreground mb-4 flex-1">
-                      {t(project.descriptionKey)}
+                      {project.description}
                     </p>
                     <div className="flex items-center justify-between pt-4 border-t border-border">
                       <span className="text-xs text-muted-foreground">{project.year}</span>
@@ -250,22 +234,29 @@ export default function Projects() {
 
           {filteredProjects.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-muted-foreground">{t('projects.noProjects')}</p>
+              <p className="text-muted-foreground">No projects found in this category.</p>
             </div>
           )}
         </div>
       </section>
 
       {/* Stats */}
+      {/* { label: "Clients Served", value: "X" }, */}
       <section className="py-16 md:py-24 bg-card">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            {stats.map((stat, idx) => (
+            {[
+              
+              { label: "Projects Completed", value: "9+" },
+              { label: "Team Members", value: "5+" },
+              { label: "of expertise, established by seasoned professionalse", value: "10 years" }, 
+              
+            ].map((stat, idx) => (
               <div key={idx}>
                 <div className="text-4xl md:text-5xl font-serif font-bold text-primary mb-2">
                   {stat.value}
                 </div>
-                <p className="text-muted-foreground">{t(stat.labelKey)}</p>
+                <p className="text-muted-foreground">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -274,3 +265,4 @@ export default function Projects() {
     </Layout>
   );
 }
+
