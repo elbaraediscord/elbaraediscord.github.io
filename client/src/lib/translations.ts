@@ -308,7 +308,7 @@ export const translations = {
         "description": "Advanced team analytics and monitoring system for FIFA tournaments"
       },
       "nusuk": {
-        "title": "Nusuk Smart Card",
+        "title": "AI-Powered Pilgrim Tracking & Crowd Intelligence",
         "category": "Software Engineering",
         "description": "Intelligent card system for seamless digital transactions"
       },

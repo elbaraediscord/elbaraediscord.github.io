@@ -19,7 +19,7 @@ const projectsData: Record<string, any> = {
       "20% increase in operational efficiency",
       "Centralized command dashboard for live monitoring"
     ],
-    gallery: ["../Qatar-1.jpg", "../Qatar-2.jpg", "../Qatar-3.jpg"],
+    gallery: ["../Qatar-World-Cup.jpg", "../Image 1.jpg", "../Image 2.jpg"],
     technologies: ["Python", "TensorFlow", "React", "Node.js", "PostgreSQL", "Docker", "AWS"],
     relatedProjects: ["neural-vision-platform", "data-pipeline-architecture"]
   },
@@ -38,7 +38,7 @@ const projectsData: Record<string, any> = {
       "Improved pilgrim service coordination",
       "Scalable infrastructure supporting millions of users"
     ],
-    gallery: ["../Nusuk-1.jpg", "../Nusuk-2.jpg", "../Nusuk-3.jpg"],
+    gallery: ["../Nusuk-Card.jpg", "../Image 4.jpg", "../Image 3.jpg"],
     technologies: ["Python", "TensorFlow", "OpenCV", "Node.js", "PostgreSQL", "Kubernetes", "Docker"],
     relatedProjects: ["predictive-analytics-engine", "cloud-infrastructure-optimization"]
   },
