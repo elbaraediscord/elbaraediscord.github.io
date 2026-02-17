@@ -471,8 +471,8 @@ export const translations = {
         },
         "location": {
           "label": "Location",
-          "city": "Riyadh",
-          "country": "Saudi Arabia"
+          "city": "Algiers",
+          "country": "Algeria"
         }
       },
       "validation": {
@@ -966,8 +966,9 @@ export const translations = {
         },
         "location": {
           "label": "الموقع",
-          "city": "الرياض",
-          "country": "المملكة العربية السعودية"
+          "city": "الجزائر",
+          "country": "الجزائر"
+
         }
       },
       "validation": {

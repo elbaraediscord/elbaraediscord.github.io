@@ -184,7 +184,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p>info@hikmanova.com</p>
                 <p>+213 553 84 33 33</p>
-                <p>Riyadh, Saudi Arabia</p>
+                <p>Algiers, Algeria</p>
               </div>
             </div>
           </div>
