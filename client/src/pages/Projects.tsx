@@ -53,15 +53,6 @@ const allProjects = [
     year: 2025,
   },
   {
-    id: 6,
-    titleKey: "projects.cybersecurity.title",
-    categoryKey: "projects.cybersecurity.category",
-    descriptionKey: "projects.cybersecurity.description",
-    image: "cybersecurity-consulting.jpg",
-    slug: "cybersecurity-consulting-audit",
-    year: 2025,
-  },
-  {
     id: 7,
     titleKey: "projects.technological.title",
     categoryKey: "projects.technological.category",
@@ -88,7 +79,46 @@ const allProjects = [
     slug: "data-pipeline-architecture",
     year: 2025,
   },
+
   {
+    id: 14,
+    titleKey: "projects.warehouse.title",
+    categoryKey: "projects.warehouse.category",
+    descriptionKey: "projects.warehouse.description",
+    image: "Image 7.jpg",
+    slug: "realtime-data-warehouse",
+    year: 2025,
+  },
+  {
+    id: 15,
+    titleKey: "projects.kubernetes.title",
+    categoryKey: "projects.kubernetes.category",
+    descriptionKey: "projects.kubernetes.description",
+    image: "Image 8.jpg",
+    slug: "kubernetes-migration",
+    year: 2025,
+  },
+  {
+    id: 16,
+    titleKey: "projects.autonomous.title",
+    categoryKey: "projects.autonomous.category",
+    descriptionKey: "projects.autonomous.description",
+    image: "Image 9.jpg",
+    slug: "autonomous-delivery-robot",
+    year: 2025,
+  },
+];
+{/* Hero 
+  {
+    id: 6,
+    titleKey: "projects.cybersecurity.title",
+    categoryKey: "projects.cybersecurity.category",
+    descriptionKey: "projects.cybersecurity.description",
+    image: "cybersecurity-consulting.jpg",
+    slug: "cybersecurity-consulting-audit",
+    year: 2025,
+  },
+    {
     id: 10,
     titleKey: "projects.cloudOptimization.title",
     categoryKey: "projects.cloudOptimization.category",
@@ -124,34 +154,7 @@ const allProjects = [
     slug: "predictive-analytics-engine",
     year: 2025,
   },
-  {
-    id: 14,
-    titleKey: "projects.warehouse.title",
-    categoryKey: "projects.warehouse.category",
-    descriptionKey: "projects.warehouse.description",
-    image: "Image 7.jpg",
-    slug: "realtime-data-warehouse",
-    year: 2025,
-  },
-  {
-    id: 15,
-    titleKey: "projects.kubernetes.title",
-    categoryKey: "projects.kubernetes.category",
-    descriptionKey: "projects.kubernetes.description",
-    image: "Image 8.jpg",
-    slug: "kubernetes-migration",
-    year: 2025,
-  },
-  {
-    id: 16,
-    titleKey: "projects.autonomous.title",
-    categoryKey: "projects.autonomous.category",
-    descriptionKey: "projects.autonomous.description",
-    image: "Image 9.jpg",
-    slug: "autonomous-delivery-robot",
-    year: 2025,
-  },
-];
+*/}
 
 const categories = [
   { key: "all", labelKey: "projects.categories.all" },
@@ -176,7 +179,7 @@ export default function Projects() {
 
   const stats = [
     { labelKey: "projects.stats.completed", value: "9+" },
-    { labelKey: "projects.stats.team", value: "5+" },
+    { labelKey: "projects.stats.team", value: "15+" },
     { labelKey: "projects.stats.expertise", value: "10 years" },
   ];
 

@@ -13,6 +13,7 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import ManagedServices from "./pages/ManagedServices";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 function Router() {
   return (
