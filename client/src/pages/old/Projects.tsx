@@ -16,11 +16,11 @@ const allProjects = [
   },
   {
     id: 2,
-    title: "Nusuk Smart Card Enhancement",
+    title: "AI-Powered Pilgrim Tracking & Crowd Intelligence",
     category: "AI",
     description: "An innovative project designed to upgrade the Nusuk smart card by integrating advanced technologies with artificial intelligence.",
     image: "Nusuk-Card.jpg",
-    slug: "Nusuk-smart-crad",
+    slug: "nusuk-smart-card",
     year: 2025,
   },
   {

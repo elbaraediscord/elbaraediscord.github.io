@@ -22,7 +22,7 @@ const allProjects = [
     categoryKey: "projects.nusuk.category",
     descriptionKey: "projects.nusuk.description",
     image: "Nusuk-Card.jpg",
-    slug: "Nusuk-smart-crad",
+    slug: "nusuk-smart-card",
     year: 2025,
   },
   {

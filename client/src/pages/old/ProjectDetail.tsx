@@ -4,6 +4,45 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const projectsData: Record<string, any> = {
+  "fifa-team-monitor": {
+    title: "TeamMonitor - AI-Powered Workforce Tracking & Management",
+    category: "AI",
+    year: 2025,
+    description: "AI-powered workforce tracking platform for real-time monitoring, optimization, and coordination of large-scale field teams",
+    image: "../Qatar-World-Cup.jpg",
+    context: "During the FIFA World Cup 2022, managing thousands of distributed field personnel across multiple venues created operational complexity, delayed reporting, and limited real-time visibility for decision-makers.",
+    approach: "We developed an AI-driven workforce management platform integrating real-time GPS tracking, predictive analytics, automated attendance logging, and performance dashboards. The system leveraged machine learning models to forecast staffing needs and optimize task allocation dynamically.",
+    results: [
+      "Real-time tracking of 5,000+ field staff",
+      "35% improvement in response time to incidents",
+      "Automated attendance and shift validation",
+      "20% increase in operational efficiency",
+      "Centralized command dashboard for live monitoring"
+    ],
+    gallery: ["../Qatar-1.jpg", "../Qatar-2.jpg", "../Qatar-3.jpg"],
+    technologies: ["Python", "TensorFlow", "React", "Node.js", "PostgreSQL", "Docker", "AWS"],
+    relatedProjects: ["neural-vision-platform", "data-pipeline-architecture"]
+  },
+  "nusuk-smart-card": {
+    title: "Nusuk Smart Card Enhancement",
+    category: "AI",
+    year: 2025,
+    description: "AI-enhanced smart card system for secure identity verification, crowd management, and service optimization for pilgrims",
+    image: "../Nusuk-Card.jpg",
+    context: "The existing Nusuk smart card system required modernization to improve identity verification speed, enhance security, and provide better analytics for managing millions of pilgrims efficiently.",
+    approach: "We integrated artificial intelligence with biometric verification, real-time validation systems, and predictive crowd analytics. The platform included secure QR/NFC authentication, fraud detection algorithms, and centralized data dashboards for authorities.",
+    results: [
+      "40% faster identity verification process",
+      "Enhanced fraud detection with AI anomaly detection",
+      "Real-time crowd flow analytics",
+      "Improved pilgrim service coordination",
+      "Scalable infrastructure supporting millions of users"
+    ],
+    gallery: ["../Nusuk-1.jpg", "../Nusuk-2.jpg", "../Nusuk-3.jpg"],
+    technologies: ["Python", "TensorFlow", "OpenCV", "Node.js", "PostgreSQL", "Kubernetes", "Docker"],
+    relatedProjects: ["predictive-analytics-engine", "cloud-infrastructure-optimization"]
+  },
+
   "neural-vision-platform": {
     title: "Neural Vision Platform",
     category: "AI",

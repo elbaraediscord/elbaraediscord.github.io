@@ -303,7 +303,7 @@ export const translations = {
         "expertise": "Years of Expertise"
       },
       "teamMonitor": {
-        "title": "FIFA Team Monitor",
+        "title": "AI-Powered Workforce Tracking & Management",
         "category": "Artificial Intelligence",
         "description": "Advanced team analytics and monitoring system for FIFA tournaments"
       },
@@ -844,7 +844,7 @@ export const translations = {
         "expertise": "سنوات الخبرة"
       },
       "teamMonitor": {
-        "title": "نظام مراقبة فريق FIFA",
+        "title": "إدارة وتتبع القوى العاملة المدعومة بالذكاء الاصطناعي",
         "category": "الذكاء الاصطناعي",
         "description": "نظام تحليلات ومراقبة فريق متقدم لبطولات FIFA"
       },
