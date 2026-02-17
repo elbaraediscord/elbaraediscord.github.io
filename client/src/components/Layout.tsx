@@ -1,21 +1,25 @@
 import { Link } from "wouter";
 import { useTheme } from "@/contexts/ThemeContext";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useTranslation } from "@/lib/translations";
 import { Moon, Sun, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { theme, toggleTheme } = useTheme();
+  const { language, setLanguage } = useLanguage();
+  const { t } = useTranslation(language);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Services", href: "/services" },
-     { label: "Managed Services", href: "/managed-services" },
-    { label: "Projects", href: "/projects" },
-    { label: "Blog", href: "/blog" },
-    { label: "Contact", href: "/contact" },
+    { labelKey: "nav.home", href: "/" },
+    { labelKey: "nav.about", href: "/about" },
+    { labelKey: "nav.services", href: "/services" },
+    { labelKey: "nav.managedServices", href: "/managed-services" },
+    { labelKey: "nav.projects", href: "/projects" },
+    { labelKey: "nav.blog", href: "/blog" },
+    { labelKey: "nav.contact", href: "/contact" },
   ];
 
   return (
@@ -25,29 +29,50 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/">
-            <a className="flex items-center gap-2 font-serif text-2xl font-bold hover:opacity-80 transition-opacity">
+            <span className="flex items-center gap-2 font-serif text-2xl font-bold hover:opacity-80 transition-opacity cursor-pointer">
               <img 
                 src="/Hikma Nova Final.png" 
                 alt="HikmaNova" 
                 className="w-10 h-10"
               />
               <span className="hidden sm:inline">HikmaNova</span>
-            </a>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}>
-                <a className="text-sm font-medium hover:text-primary transition-colors">
-                  {link.label}
-                </a>
+                <span className="text-sm font-medium hover:text-primary transition-colors cursor-pointer">
+                  {t(link.labelKey)}
+                </span>
               </Link>
             ))}
           </nav>
 
-          {/* Theme Toggle & Mobile Menu */}
+          {/* Language Switcher, Theme Toggle & Mobile Menu */}
           <div className="flex items-center gap-2">
+            {/* Language Switcher */}
+            <div className="flex items-center gap-1 bg-card rounded-full p-1 border border-border">
+              <Button
+                variant={language === 'en' ? 'default' : 'ghost'}
+                size="sm"
+                onClick={() => setLanguage('en')}
+                className="rounded-full text-xs font-medium px-3"
+              >
+                EN
+              </Button>
+              <Button
+                variant={language === 'ar' ? 'default' : 'ghost'}
+                size="sm"
+                onClick={() => setLanguage('ar')}
+                className="rounded-full text-xs font-medium px-3"
+              >
+                AR
+              </Button>
+            </div>
+            
+            {/* Theme Toggle */}
             <Button
               variant="ghost"
               size="icon"
@@ -85,12 +110,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="container py-4 flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href}>
-                  <a 
-                    className="text-sm font-medium hover:text-primary transition-colors block py-2"
+                  <span 
+                    className="text-sm font-medium hover:text-primary transition-colors block py-2 cursor-pointer"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    {link.label}
-                  </a>
+                    {t(link.labelKey)}
+                  </span>
                 </Link>
               ))}
             </div>
@@ -104,70 +129,50 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-border bg-card text-card-foreground mt-16">
+      <footer className="border-t border-border bg-card text-card-foreground">
         <div className="container py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             {/* Brand */}
             <div>
-              <h3 className="font-serif text-lg font-bold mb-4">HikmaNova</h3>
+              <h3 className="font-serif font-bold text-lg mb-4">HikmaNova</h3>
               <p className="text-sm text-muted-foreground">
-                Innovation and technology portfolio showcasing cutting-edge projects and AI-powered solutions.
+                Innovation through technology
               </p>
             </div>
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <h4 className="font-serif font-bold mb-4">{t('footer.quickLinks')}</h4>
               <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/about">
-                    <a className="text-muted-foreground hover:text-foreground transition-colors">
-                      About
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services">
-                    <a className="text-muted-foreground hover:text-foreground transition-colors">
-                      Services
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/projects">
-                    <a className="text-muted-foreground hover:text-foreground transition-colors">
-                      Projects
-                    </a>
-                  </Link>
-                </li>
+                {navLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href}>
+                      <span className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+                        {t(link.labelKey)}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
             {/* Resources */}
             <div>
-              <h4 className="font-semibold mb-4">Resources</h4>
+              <h4 className="font-serif font-bold mb-4">{t('footer.resources')}</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/blog">
-                    <a className="text-muted-foreground hover:text-foreground transition-colors">
-                      Blog
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <a 
-                    href="#" 
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Documentation
+                  <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                    {t('footer.privacy')}
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="#" 
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    GitHub
+                  <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                    {t('footer.terms')}
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                    {t('footer.sitemap')}
                   </a>
                 </li>
               </ul>
@@ -175,41 +180,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
             {/* Contact */}
             <div>
-              <h4 className="font-semibold mb-4">Get In Touch</h4>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/contact">
-                    <a className="text-muted-foreground hover:text-foreground transition-colors">
-                      Contact Us
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <a 
-                    href="mailto:info@hikmanova.com" 
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    info@hikmanova.com
-                  </a>
-                </li>
-              </ul>
+              <h4 className="font-serif font-bold mb-4">{t('footer.getInTouch')}</h4>
+              <div className="space-y-2 text-sm text-muted-foreground">
+                <p>info@hikmanova.com</p>
+                <p>+213 553 84 33 33</p>
+                <p>Riyadh, Saudi Arabia</p>
+              </div>
             </div>
           </div>
 
-          {/* Divider */}
-          <div className="border-t border-border pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-              <p>&copy; 2025 HikmaNova. All rights reserved.</p>
-              <div className="flex gap-6">
-                <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
-                <a href="#" className="hover:text-foreground transition-colors">Terms</a>
-                <a href="#" className="hover:text-foreground transition-colors">Sitemap</a>
-              </div>
-            </div>
+          {/* Copyright */}
+          <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
+            <p>&copy; 2024 HikmaNova. {t('footer.allRightsReserved')}</p>
           </div>
         </div>
       </footer>
     </div>
   );
 }
-
