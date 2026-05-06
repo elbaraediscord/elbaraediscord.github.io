@@ -98,6 +98,7 @@ const allProjects = [
     slug: "kubernetes-migration",
     year: 2025,
   },
+  /*
   {
     id: 16,
     titleKey: "projects.autonomous.title",
@@ -107,6 +108,7 @@ const allProjects = [
     slug: "autonomous-delivery-robot",
     year: 2025,
   },
+  */
 ];
 {/* Hero 
   {

@@ -14,7 +14,9 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import ManagedServices from "./pages/ManagedServices";
-import { LanguageProvider } from "./contexts/LanguageContext";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import Sitemap from "./pages/Sitemap";
 
 function Router() {
   return (
@@ -30,6 +32,9 @@ function Router() {
       <Route path={"/contact"} component={Contact} />
       <Route path={"/404"} component={NotFound} />
       <Route path={"/managed-services"} component={ManagedServices} />
+      <Route path={"/privacy"} component={Privacy} />
+      <Route path={"/terms"} component={Terms} />
+      <Route path={"/sitemap"} component={Sitemap} />
       {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
@@ -57,4 +62,3 @@ function App() {
 }
 
 export default App;
-

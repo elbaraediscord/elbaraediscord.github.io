@@ -204,6 +204,82 @@ const projectsData: Record<string, any> = {
     technologies: ["ROS", "Python", "TensorFlow", "GPS/GNSS", "LTE/5G", "Cloud APIs"],
     relatedProjects: ["robotics-control-system", "neural-vision-platform"],
   },
+  "cryptocurrency-investment-platform": {
+    title: "Cryptocurrency Investment Platform",
+    category: "Software Engineering",
+    year: 2025,
+    description: "Secure cryptocurrency investment platform with real-time market analytics and portfolio management",
+    image: "../cryptocurrency-investment-platform.jpg",
+    context: "The client needed a modern cryptocurrency investment platform that could handle high-frequency trading, real-time market data, and secure asset management for thousands of concurrent users.",
+    approach: "We built a full-stack platform using React for the frontend and Node.js for the backend, integrated with major cryptocurrency exchanges via APIs. The system includes real-time WebSocket connections for market data, advanced portfolio analytics, and multi-signature wallet security.",
+    results: [
+      "Support for 10,000+ concurrent users",
+      "Real-time market data with <100ms latency",
+      "Advanced portfolio analytics and risk management",
+      "99.99% uptime SLA",
+      "Secure multi-signature wallet implementation"
+    ],
+    gallery: ["../cryptocurrency-investment-platform.jpg", "../Image 1.jpg", "../Image 2.jpg"],
+    technologies: ["React", "Node.js", "PostgreSQL", "WebSocket", "Redis", "AWS", "Docker"],
+    relatedProjects: ["data-pipeline-architecture", "ecommerce-platform"]
+  },
+  "smart-chatbot-customer-service": {
+    title: "Smart Chatbot for Customer Service",
+    category: "AI",
+    year: 2025,
+    description: "AI-powered chatbot system for intelligent customer service and support automation",
+    image: "../smart-chatbot-ai.jpg",
+    context: "The client's customer support team was overwhelmed with repetitive inquiries, leading to long response times and customer dissatisfaction. They needed an intelligent system to handle common questions while seamlessly escalating complex issues to human agents.",
+    approach: "We developed an advanced chatbot using natural language processing and machine learning. The system uses intent recognition, entity extraction, and context management to understand customer queries. It integrates with their CRM system and knowledge base, with intelligent routing to human agents when needed.",
+    results: [
+      "Handles 70% of customer inquiries automatically",
+      "Average response time reduced from 2 hours to <1 minute",
+      "Customer satisfaction score improved by 35%",
+      "30% reduction in support team workload",
+      "24/7 availability across multiple channels"
+    ],
+    gallery: ["../smart-chatbot-ai.jpg", "../Image 3.jpg", "../Image 4.jpg"],
+    technologies: ["Python", "NLP", "TensorFlow", "Node.js", "React", "PostgreSQL", "AWS"],
+    relatedProjects: ["neural-vision-platform", "predictive-analytics-engine"]
+  },
+  "intervention-vouchers-erp": {
+    title: "Intervention Vouchers ERP System",
+    category: "Software Engineering",
+    year: 2025,
+    description: "Enterprise resource planning system for managing intervention vouchers and field operations",
+    image: "../intervention-vouchers-erp.jpg",
+    context: "The organization needed to streamline their intervention voucher management process, which was previously handled through manual paperwork and spreadsheets. This led to delays, errors, and difficulty tracking field operations across multiple locations.",
+    approach: "We developed a comprehensive ERP system with modules for voucher creation, approval workflows, field team management, and real-time tracking. The system includes mobile apps for field teams, automated reporting, and integration with accounting systems.",
+    results: [
+      "Processing time reduced by 80%",
+      "Error rate decreased from 15% to <1%",
+      "Real-time visibility into all field operations",
+      "Automated approval workflows",
+      "Comprehensive audit trails and compliance reporting"
+    ],
+    gallery: ["../intervention-vouchers-erp.jpg", "../Image 5.jpg", "../Image 6.jpg"],
+    technologies: ["React", "Node.js", "PostgreSQL", "React Native", "Docker", "AWS"],
+    relatedProjects: ["ecommerce-platform", "data-pipeline-architecture"]
+  },
+  "technological-dependency-research": {
+    title: "Technological Dependency Research Platform",
+    category: "Data",
+    year: 2025,
+    description: "Research platform for analyzing technological dependencies and supply chain risks",
+    image: "../technological-dependency-series.jpg",
+    context: "Organizations needed better tools to understand their technological dependencies and identify potential supply chain risks. Manual analysis was time-consuming and incomplete.",
+    approach: "We built a comprehensive research platform that analyzes technology stacks, identifies dependencies, and maps supply chain relationships. The platform uses web scraping, API integrations, and machine learning to identify risks and provide actionable insights.",
+    results: [
+      "Analyzed 5,000+ technology dependencies",
+      "Identified critical supply chain risks",
+      "Automated dependency tracking and updates",
+      "Risk scoring and prioritization system",
+      "Executive dashboards for decision-making"
+    ],
+    gallery: ["../technological-dependency-series.jpg", "../Image 7.jpg", "../Image 8.jpg"],
+    technologies: ["Python", "Scrapy", "PostgreSQL", "React", "Node.js", "Elasticsearch"],
+    relatedProjects: ["data-pipeline-architecture", "predictive-analytics-engine"]
+  },
 };
 
 

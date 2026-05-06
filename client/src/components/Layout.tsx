@@ -161,19 +161,25 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <h4 className="font-serif font-bold mb-4">{t('footer.resources')}</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    {t('footer.privacy')}
-                  </a>
+                  <Link href="/privacy">
+                    <span className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+                      {t('footer.privacy')}
+                    </span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    {t('footer.terms')}
-                  </a>
+                  <Link href="/terms">
+                    <span className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+                      {t('footer.terms')}
+                    </span>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                    {t('footer.sitemap')}
-                  </a>
+                  <Link href="/sitemap">
+                    <span className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+                      {t('footer.sitemap')}
+                    </span>
+                  </Link>
                 </li>
               </ul>
             </div>
