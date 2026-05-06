@@ -121,6 +121,7 @@ export default function Contact() {
               </a>
             </div>
 
+            {/* Phone section commented out
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
                 <Phone className="w-6 h-6 text-primary" />
@@ -133,6 +134,7 @@ export default function Contact() {
                 +213 553 84 33 33
               </a>
             </div>
+            */
 
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">

@@ -79,7 +79,7 @@ export default function Privacy() {
               </p>
               <div className="mt-4 text-muted-foreground">
                 <p>Email: info@hikmanova.com</p>
-                <p>Phone: +213 553 84 33 33</p>
+                {/* <p>Phone: +213 553 84 33 33</p> */}
                 <p>Address: Algiers, Algeria</p>
               </div>
             </div>

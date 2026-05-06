@@ -189,7 +189,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <h4 className="font-serif font-bold mb-4">{t('footer.getInTouch')}</h4>
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p>info@hikmanova.com</p>
-                <p>+213 553 84 33 33</p>
+                {/* <p>+213 553 84 33 33</p> */}
                 <p>Algiers, Algeria</p>
               </div>
             </div>
