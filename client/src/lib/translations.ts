@@ -136,17 +136,17 @@ export const translations = {
         "title": "Our Team",
         "subtitle": "Expert professionals dedicated to your success",
         "ibrahim": {
-          "name": "Ibrahim Mohamed",
+          "name": "Ibrahim.L",
           "role": "Founder & CEO",
           "bio": "Visionary leader with 10+ years of experience in AI and cloud technologies"
         },
         "hicham": {
-          "name": "Hicham Benali",
+          "name": "Hichem.B",
           "role": "CTO",
           "bio": "Expert in software architecture and DevOps with proven track record"
         },
         "ayoub": {
-          "name": "Ayoub Saidi",
+          "name": "Ayoub.G",
           "role": "Lead Data Engineer",
           "bio": "Specialist in building scalable data platforms and analytics solutions"
         }
@@ -677,17 +677,17 @@ export const translations = {
         "title": "فريقنا",
         "subtitle": "متخصصون مكرسون لنجاحك",
         "ibrahim": {
-          "name": "إبراهيم محمد",
+          "name": "Ibrahim.L",
           "role": "المؤسس والرئيس التنفيذي",
           "bio": "قائد رؤيوي بخبرة تزيد عن 10 سنوات في الذكاء الاصطناعي وتقنيات السحابة"
         },
         "hicham": {
-          "name": "هشام بنالي",
+          "name": "Hichem.B",
           "role": "مدير التكنولوجيا",
           "bio": "خبير في هندسة البرمجيات و DevOps مع سجل حافل بالإنجازات"
         },
         "ayoub": {
-          "name": "أيوب سعيدي",
+          "name": "Ayoub.G",
           "role": "مهندس البيانات الرئيسي",
           "bio": "متخصص في بناء منصات البيانات القابلة للتوسع وحلول التحليلات"
         }
